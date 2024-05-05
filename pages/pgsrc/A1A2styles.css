@@ -119,6 +119,7 @@ main.full-width{
     font-size: x-small;
     color: grey;
     width: fit-content;
+    
 }
 .modulename{
     display: flex;
@@ -369,20 +370,36 @@ main.full-width{
     }
     .studentprofile{
         display: flex;
-        flex-direction: column;
-        padding: 5%;
+        flex-direction: row;
+        justify-content: left;
         align-items: center;
-        justify-content: space-between;
+        padding: 12px;
+        width: 90%;
+    }
+    #userlogo{
+        display: flex;
+        width: 15%;
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+        color: #0a3153;
+    }
+    #studentid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 60%;
+        margin-left: 8px;
     }
     #studentname{
-        text-align: center;
-        font-size: 22px;
-        color: #0a3153;
+        margin: 0;
+        font-weight: 600;
+        font-size: larger;
     }
     .modulename{
         display: flex;
         height: 30px;
-        width: 100%;
+        width: 80%;
         padding: 6px;
         align-items: center;
         background-color: #0a3153;
