@@ -116,7 +116,7 @@ main.full-width{
 }
 #studentemail{
     margin: 0;
-    font-size: smaller;
+    font-size: x-small;
     color: grey;
     width: fit-content;
 }
