@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="pgsrc/teacherhomepagestyles.css">
+    <link rel="icon" type="image/png" href="pgsrc/logowhite.png">
+    <script type="module" src="pgsrc/studentstable.js" defer></script>
+    <script type="module" src="pgsrc/newstudent.js" defer></script>
+    <script src="https://kit.fontawesome.com/da41431bf6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header-icons">
+            <a href="#" onclick="sidebardisplay()"><i class="fa-sharp fa-solid fa-bars"></i></a>
+            <img src="pgsrc/horizonheaderlogo.png">
+        </div>
+        <div class="headerlinks">
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+        </div>
+    </header>
+    <div class="layout">
+        <nav id="sidebar">
+            <div class="studentprofile">
+                <h3 id="studentname"></h3>
+            </div>
+            <hr id="bottomline">
+            <div class="studentmenu">
+                <a href="#" class="menuitem" onclick="changeContent('itemhome', this)" style="display: none;"><i
+                        class="fa-solid fa-house"></i>
+                    Dashboard</a>
+                <a href="#" class="menuitem" onclick="changeContent('itemclasses', this)"><i
+                        class="fa-solid fa-list"></i> Classes</a>
+                <a href="#" class="menuitem" onclick="changeContent('itemstudents', this)" id="defaultlink"><i
+                        class="fa-solid fa-users"></i> Students</a>
+
+            </div>
+        </nav>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form id="dataForm">
+                <div id="formTitle">
+                    <h2>Cadastrar novo aluno:</h2>
+                </div>
+                <label for="name">Nome:</label>
+                <input type="text" id="name" placeholder="Nome">
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Email">
+                <br>
+                <div>
+                    <label for="course">Módulo:</label>
+                    <select id="course" placeholder="Módulo">
+                        <option value="A1A2">Módulo A1-A2</option>
+                        <option value="B1">Módulo B1</option>
+                        <option value="Conversation">Conversation</option>
+                    </select>
+                    <label for="pricehour">Valor:</label>
+                    <input type="number" id="pricehour" placeholder="Hora/Aula">
+                    <label for="mhours">Aulas/Mês:</label>
+                    <input type="number" id="mhours" placeholder="Aulas no mês">
+                </div>
+                <button type="submit" id="bttnsubmit">Salvar</button>
+            </form>
+        </div>
+    </div>
+    <main id="mainContent">
+        <div id="itemstudents" class="homepageitems" style="display: none;">
+            <div id="itemStudentsContainer">
+                <div id="studentsHeader">
+                    <h3>Students Dashboard</h3>
+                    <div id="studentsButtons">
+                        <button id="reloadButton" class="studentButton" onclick="populateStudentsTable"><i class="fa-solid fa-rotate"></i> &nbspUpdate</button>
+                        <button id="myBtn" class="studentButton"><i class="fa-solid fa-person-circle-plus"></i> &nbspNew Student</button>
+                    </div>
+                </div>
+                <div>
+                    <table id="studentsTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Module</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script>
+        function changeContent(menuitem, link) {
+            var homepageitems = document.getElementsByClassName("homepageitems");
+
+            // Hide all unit content divs
+            for (var i = 0; i < homepageitems.length; i++) {
+                homepageitems[i].style.display = "none";
+            }
+
+            // Show the selected unit's content
+            document.getElementById(menuitem).style.display = "block";
+
+            // Remove highlight from all links
+            var menuitems = document.getElementsByClassName("menuitem");
+            for (var i = 0; i < menuitems.length; i++) {
+                menuitems[i].classList.remove("selected");
+            }
+
+            // Add highlight to the clicked link
+            link.classList.add("selected");
+        }
+        function setDefault() {
+            // Simulate a click event on the default link
+            document.getElementById("defaultlink").click();
+        }
+        // Sidebar hide and show function
+        function sidebardisplay() {
+            var sidebar = document.getElementById('sidebar');
+            var main = document.getElementById('mainContent');
+
+            sidebar.classList.toggle('hidden');
+
+            main.classList.toggle('full-width');
+
+            if (sidebar.style.display === "none") {
+                sidebar.style.display = "";
+            } else {
+                sidebar.style.display = "none";
+            }
+        }
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal 
+        btn.onclick = function () {
+            modal.style.display = "flex";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,277 @@
+html, body {
+    background-color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0a3153;
+    border-bottom: 1px solid lightgrey;
+    height: 9vh;
+    width: 100%;
+}
+.header-icons{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+    align-items: center;
+}
+.header-icons a {
+    text-decoration: none;
+    color: #c3c3c3;
+    font-size: larger;
+    width: 15%;
+    height: 15%;
+}
+.header-icons a:hover{
+    color: white;
+}
+.header-icons img{
+    width: 200px;
+    height: 24px;
+    margin-left: 20px;
+}
+.headerlinks{
+    display: flex;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    margin-right: 1%;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.headerlinks a{
+    color: #0a3153;
+    
+}
+.layout {
+    margin-top: 9dvh;
+    display: flex;
+    flex-direction: row;
+}
+
+nav {
+    position: fixed;
+    top: 9vh;
+    left: 0;
+    background-color: white;
+    height: 92vh; 
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s ease, opacity 1s ease;
+    z-index: 1000;
+}
+nav.hidden{
+    width: 0;
+}
+main {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #eaeaea;
+    transition: margin-left 0.3s ease;
+}
+main.full-width{
+    margin-left: 0;
+}
+.studentprofile{
+    padding: 5%;
+}
+#studentname{
+    text-align: center;
+    font-size: 22px;
+    color: #0a3153;
+}
+#bottomline{
+    margin-top: 3dvh;
+    background-color: #c3c3c3;
+    width: 80%;
+    height: 1px;
+    border: none;
+}
+.studentmenu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 16px;
+    padding: 2%;
+}
+.menuitem{
+    padding: 6%;
+    border-radius: 8px;
+    width: 75%;
+    color: #c3c3c3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+}
+.menuitem:hover{
+    background-color: #EAEAEA;
+    color: #0a3153;
+}
+.menuitem.selected{
+    background-color: #EAEAEA;
+    color: #0a3153;
+    font-weight: 1000;
+    cursor: pointer;
+}
+#itemstudents{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 84dvh;
+}
+#itemStudentsContainer{
+    display: flex;
+    flex-direction: column;
+    height: 84dvh;
+    width: 100%;
+}
+#studentsHeader{
+    display: flex;
+    flex-direction: row;
+    height: 12dvh;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+}
+#studentsButtons{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+#studentsHeader h3{
+    color: #0a3153;
+    font-size: x-large;
+}
+.studentButton{
+    height: 70%;
+    width: 25%;
+    margin: 2%;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow:  5px 5px 9px #d0d0d0;
+}
+.studentButton:hover{
+    background-color: #3267ac;
+    color: white;
+}
+#studentsTable{
+    background-color: white;
+    width: 100%;
+    padding: 2%;
+    border-radius: 16px;
+    box-shadow:  5px 5px 9px #d0d0d0;
+}
+#studentsTable th{
+    height: 50px;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    
+}
+
+#studentsTable td{
+    height: 40px;
+    padding-left: 2%;
+    text-align: center;
+}
+
+/* Cadastro de novo aluno */
+.modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 9vh; 
+    z-index: 1000; 
+    display: none;
+    overflow: auto;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-content {
+    display: flex;
+    width: 50%;
+    height: 60%;
+    top: 4vh;
+    position: relative;
+    background-color: #fefefe;
+    margin-top: 0;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 8px;
+    justify-content: center;
+}
+
+.close {
+    color: #aaa;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+#dataForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#dataForm input {
+    margin: 2%;
+    height: 4dvh;
+    margin-bottom: 10px;
+}
+#dataForm div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#course{
+    width: 20%;
+    height: 5dvh;
+    margin: 2%;;
+    
+}
+#dataForm div input{
+    width: 18%;
+}
+#bttnsubmit{
+    margin: 2%;
+    height: 6dvh;
+    font-size: large;
+    font-weight: 600;
+    border-radius: 24px;
+    border: none;
+    color: white;
+    background-color: #3267ac;
+}
+#bttnsubmit:hover{
+    cursor: pointer;
+    background-color: #3270c0;
+}
