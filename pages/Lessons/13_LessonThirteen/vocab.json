@@ -1,0 +1,13 @@
+{
+    "vocab1EN": ["Pain", "Medicine", "Injury", "Disease", "Treatment"],
+    "vocab1PT": ["Dor", "Medicamento, Remédio", "Ferimento", "Doença", "Tratamento"],
+
+    "vocab2EN": ["Headache", "Migraine", "Backache", "Sore Throat", "The Flu"],
+    "vocab2PT": ["Dor de cabeça", "Enxaqueca", "Dor nas Costas", "Dor de Garganta", "Gripe"],
+
+    "vocab3EN": ["Cold", "Cure", "Wound", "Bruise"],
+    "vocab3PT": ["Resfriado", "Cura", "Ferimento", "Hematoma"],
+
+    "vocab4EN": ["to Feel / Felt / Felt", "to Take / Took / Taken", "to Get / Got / Gotten", "to Heal / Healed / Heald"],
+    "vocab4PT": ["Sentir", "Tomar, Pegar...", "Conseguir, ficar...", "Curar"]
+}

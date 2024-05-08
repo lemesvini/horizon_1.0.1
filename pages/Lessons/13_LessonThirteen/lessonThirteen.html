@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Thirteen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="src/logowhite.png">
+    <script src="https://kit.fontawesome.com/da41431bf6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="headericons">
+            <a href="#" id="home" onclick="window.location.href = '../../A1A2.html'"><i class="fa-solid fa-house"></i> Home</a>
+            <a id="dictionary" href="#" onclick="window.open('https://dictionary.cambridge.org/', '_blank')"><i class="fa-solid fa-spell-check"></i> Dictionary</a>
+            <a href="#" id="logout" onclick="window.location.href = '/../index.html'"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+        </div>
+        <!--<audio id="audiocontrol" controls controlsList="nodownload noplaybackrate" style="display: none;">
+            <source src="HTG-CL2.mp3" type="audio/mp3">
+        </audio>-->
+    </header>
+    <aside>
+        <h3>Health and Feelings</h3>
+        <div id="container">
+            <a href="#" id="WarmUpLink" class="classitem" onclick="changeContent('WarmUp', this); callframe();"><i class="fa-solid fa-fire"></i></a>
+            <a href="#" id="VocabLink" class="classitem" onclick="changeContent('Vocabulary', this); killframe();"><i class="fa-solid fa-spell-check"></i></a>
+            <a href="#" id="InputOneLink" class="classitem" onclick="changeContent('InputOne', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="InputTwoLink" class="classitem" onclick="changeContent('InputTwo', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="PracticeLink" class="classitem" onclick="changeContent('Practice', this); callframe();"><i class="fa-solid fa-pen"></i></a>
+        </div>
+    </aside>
+    <main>
+        <div id="mainframe"></div>
+        <div id="classWarmUp" class="classContent" style="display: none;">
+            <div class="warmupitem">
+                <h3>O que você lembra da Unit Two?</h3>
+            </div>
+            <div class="warmupitem">
+                <h3>Você gosta de contar histórias?</h3>
+            </div>
+        </div>
+        <div id="classVocabulary" class="classContent" style="display: none;">
+            <div id="vocabgrid" class="vocabtop">
+                <div id="vocab1">
+                </div>
+                <div id="vocab2" class="vocabtop">
+                </div>
+                <div class="vocab3">
+                    <div id="vocab3col1" class="vocab3col">
+                    </div>
+                    <div id="vocab3col2" class="vocab3col">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="classInputOne" class="classContent" style="display: none;">
+            <div id="inp1container">
+                <div class="inputoneitem" id="inputoneitem1"> 
+                    <h2><i class="fa-solid fa-circle-plus"></i> | Simple Past and the auxiliaries</h2>
+                    <h4 style="text-align: center;">We use auxiliaries for questions and negative sentences</h4>
+                    <p style="border-bottom: 1px solid grey;">Do / Does <i class="fa-regular fa-circle-right" style="color: #18396e;"></i><strong style="color: #9e2a2b;"> Did </strong></p>
+                    <p><strong style="color: #9e2a2b;">Did</strong> you go home after school yesterday?</p>
+                    <p style="margin-bottom: 32px;"><strong style="color: #9e2a2b;">Did</strong> she have lunch at noon?</p>
+                    <p style="border-bottom: 1px solid grey;">Don't / Doesn't <i class="fa-regular fa-circle-right" style="color: #18396e;"></i><strong style="color: #9e2a2b;"> Didn't </strong></p>
+                    <p>I <strong style="color: #9e2a2b;">didn't</strong> feel good after that dinner.</p>
+                    <p>We <strong style="color: #9e2a2b;">didn't</strong> like his comments.</p>
+                </div>
+                <div class="inputoneitem" id="inputoneitem2">
+                </div>
+            </div>
+        </div>
+        <div id="classInputTwo" class="classContent" style="display: none;">
+            <h2><i class="fa-solid fa-circle-plus"></i> | Simple Past in Verbs</h2>
+            <hr>
+            <div id="tobe">
+                <div id="one">
+                    <h4>Regular Verbs: add "<strong>ed</strong>"</h4>
+                    <p>We work<strong style="color: #9e2a2b;">ed</strong> at the hospital last year.</p>
+                    <p>She lik<strong style="color: #9e2a2b;">ed</strong> my story.</p>
+                    <p>She play<strong style="color: #9e2a2b;">ed</strong> many sports.</p>
+                    <p style="color: grey; border-bottom: 1px solid grey; padding: 2px;">Consonant + "Y", add "ies"</p>
+                    <p>I stud<strong style="color: #9e2a2b;">ied</strong> Spanish last year.</p>
+
+                </div>
+                <div id="two">
+                    <h4>Irregular Verbs: It's a different word</h4>
+                    <p>Joanna <strong style="color: #9e2a2b;">had</strong> chicken for dinner yesterday.</p>
+                    <p>I <strong style="color: #9e2a2b;">went</strong> to the beach and felt better.</p>
+                    <p style="color: grey; border-bottom: 1px solid grey; padding: 2px;">Past Verb to Be</p>
+                    <p>I <strong style="color: #9e2a2b;">was</strong> sick yesterday.</p>
+                    <p>They <strong style="color: #9e2a2b;">weren't</strong> feeling well.</p>
+                    
+
+                </div>
+            </div>
+        </div>
+        <div id="classPractice" class="classContent" style="display: none;">
+            <div id="actonecontainer">
+                <div id="actone">
+                    <h3>Conversation Questions</h3>
+                    <h4>Answer the questions below:</h4>
+                    
+                    <div>
+                        <p>What did you do yesterday?</p>
+                        <p>Where were you last weekend</p>
+                        <p>What did you have the last time you were sick?</p>
+                        <p>What <strong>happened</strong> the last time you went to the hospital?</p>
+                        <p>What is your best childhood memory?</p>
+                    </div>
+                </div>
+                <div id="actimg"></div>
+            </div>
+            
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
