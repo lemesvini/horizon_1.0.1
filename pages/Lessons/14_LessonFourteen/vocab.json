@@ -1,0 +1,13 @@
+{
+    "vocab1EN": ["Store ", "Mall", "Salary", "Bill", "Payment"],
+    "vocab1PT": ["Loja", "Shopping", "Salário", "Conta, Nota", "Pagamento"],
+
+    "vocab2EN": ["Check", "Tax(es)", "Savings", "(in) Installments", "Down Payment"],
+    "vocab2PT": ["Cheque, Conta (restaurante)", "Imposto", "Economias", "Parcela, Parcelado", "Entrada"],
+
+    "vocab3EN": ["Loan", "Wholesale ", "Retail", "Income"],
+    "vocab3PT": ["Empréstimo", "Atacado", "Varejo", "Renda"],
+
+    "vocab4EN": ["to Buy / Bought / Bought", "to Sell / Sold / Sold", "to Save  / Saved / Saved", "to Order  / Ordered / Ordered"],
+    "vocab4PT": ["Comprar", "Vender", "Salvar, Economizar", "Pedir, Encomendar"]
+}
