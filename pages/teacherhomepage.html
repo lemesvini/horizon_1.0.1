@@ -8,38 +8,247 @@
     <link rel="stylesheet" href="pgsrc/teacherhomepagestyles.css">
     <link rel="icon" type="image/png" href="pgsrc/logowhite.png">
     <script type="module" src="pgsrc/studentstable.js" defer></script>
+    <script type="module" src="pgsrc/attendance.js" defer></script>
     <script type="module" src="pgsrc/newstudent.js" defer></script>
+    <script type="module" src="pgsrc/records.js" defer></script>
+    <script src="pgsrc/editstudent.js"></script>
     <script src="https://kit.fontawesome.com/da41431bf6.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="setDefault()">
     <header id="header">
         <div class="header-icons">
             <a href="#" onclick="sidebardisplay()"><i class="fa-sharp fa-solid fa-bars"></i></a>
             <img src="pgsrc/horizonheaderlogo.png">
         </div>
-        <div class="headerlinks">
-            <a href="#"><i class="fa-solid fa-user"></i></a>
-        </div>
     </header>
     <div class="layout">
         <nav id="sidebar">
             <div class="studentprofile">
-                <h3 id="studentname"></h3>
+                <h3 id="studentname">Teacher Homepage</h3>
             </div>
             <hr id="bottomline">
             <div class="studentmenu">
                 <a href="#" class="menuitem" onclick="changeContent('itemhome', this)" style="display: none;"><i
                         class="fa-solid fa-house"></i>
                     Dashboard</a>
-                <a href="#" class="menuitem" onclick="changeContent('itemclasses', this)"><i
-                        class="fa-solid fa-list"></i> Classes</a>
-                <a href="#" class="menuitem" onclick="changeContent('itemstudents', this)" id="defaultlink"><i
+                <div id="divmodules">
+                    <p style="font-size: 18px; font-weight: 600; color: #c3c3c3;"><i class="fa-solid fa-list"></i>
+                        Classes</p>
+                    <a href="#" id="defaultlink" class="menuitem" onclick="changeContent('itemA1A2', this)"
+                        style="font-weight: 100; align-self: flex-end;"><i class="fa-solid fa-bookmark"></i> A1-A2</a>
+                    <a href="#" class="menuitem" onclick="changeContent('itemB1', this)"
+                        style="font-weight: 100; align-self: flex-end; display: none;"><i
+                            class="fa-solid fa-bookmark"></i> B1</a>
+                </div>
+                <a href="#" id="menuitemAttendance" class="menuitem" onclick="changeContent('itemattendence', this)"><i
+                        class="fa-solid fa-square-plus"></i> New Lesson</a>
+                <a href="#" id="menuitemRecords" class="menuitem" onclick="changeContent('itemrecords', this)"><i
+                        class="fa-solid fa-calendar-check"></i> Class Records</a>
+                <a href="#" id="menuitemStudents" class="menuitem" onclick="changeContent('itemstudents', this)"><i
                         class="fa-solid fa-users"></i> Students</a>
-
             </div>
         </nav>
     </div>
+    <main id="mainContent">
+        <div id="itemhome" class="homepageitems" style="display: none;">
+        </div>
+        <div id="itemA1A2" class="homepageitems" style="display: none;">
+            <div class="grid">
+                <h3 class="titleunit">Unit One</h3>
+                <div class="unit">
+                    <div class="lessonU1" onclick="window.location.href = 'Lessons/1_LessonOne/lessonOne.html'">
+
+                        <div class="lesson-title">Lesson 1</div>
+                        <div class="lesson-description">Welcome!</div>
+                    </div>
+                    <div class="lessonU1" onclick="window.location.href = 'Lessons/2_LessonTwo/lessonTwo.html'">
+
+                        <div class="lesson-title">Lesson 2</div>
+                        <div class="lesson-description">Personal Information</div>
+                    </div>
+                    <div class="lessonU1" onclick="window.location.href = 'Lessons/3_LessonThree/lessonThree.html'">
+
+                        <div class="lesson-title">Lesson 3</div>
+                        <div class="lesson-description">Routines are important!</div>
+                    </div>
+                    <div class="lessonU1" onclick="window.location.href = 'Lessons/4_LessonFour/lessonFour.html'">
+
+                        <div class="lesson-title">Lesson 4</div>
+                        <div class="lesson-description">Food and Drinks I</div>
+                    </div>
+                    <div class="lessonU1" onclick="window.location.href = 'Lessons/5_LessonFive/lessonFive.html'">
+
+                        <div class="lesson-title">Lesson 5</div>
+                        <div class="lesson-description">Fashion and clothing</div>
+                    </div>
+                    <div class="lessonU1" onclick="window.location.href = 'Lessons/6_LessonSix/lessonSix.html'">
+
+                        <div class="lesson-title">Lesson 6</div>
+                        <div class="lesson-description">Unit Review</div>
+                    </div>
+                </div>
+                <h3 class="titleunit">Unit Two</h3>
+                <div class="unit">
+
+                    <div class="lessonU2">
+
+                        <div class="lesson-title">Lesson 7</div>
+                        <div class="lesson-description">Places and Directions</div>
+                    </div>
+                    <div class="lessonU2">
+
+                        <div class="lesson-title">Lesson 8</div>
+                        <div class="lesson-description">Numbers and time</div>
+                    </div>
+                    <div class="lessonU2">
+
+                        <div class="lesson-title">Lesson 9</div>
+                        <div class="lesson-description">Describing people</div>
+                    </div>
+                    <div class="lessonU2">
+
+                        <div class="lesson-title">Lesson 10</div>
+                        <div class="lesson-description">Hobbies and activities</div>
+                    </div>
+                    <div class="lessonU2">
+
+                        <div class="lesson-title">Lesson 11</div>
+                        <div class="lesson-description">Travel and transportation</div>
+                    </div>
+                    <div class="lessonU2">
+
+                        <div class="lesson-title">Lesson 12</div>
+                        <div class="lesson-description">Unit Review</div>
+                    </div>
+                </div>
+                <h3 class="titleunit">Unit Three</h3>
+                <div class="unit">
+
+                    <div class="lessonU3"
+                        onclick="window.location.href = 'Lessons/13_LessonThirteen/lessonThirteen.html'">
+
+                        <div class="lesson-title">Lesson 13</div>
+                        <div class="lesson-description">Health and feelings</div>
+                    </div>
+                    <div class="lessonU3">
+
+                        <div class="lesson-title">Lesson 14</div>
+                        <div class="lesson-description">Shopping and money</div>
+                    </div>
+                    <div class="lessonU3">
+
+                        <div class="lesson-title">Lesson 15</div>
+                        <div class="lesson-description">Everything is possible</div>
+                    </div>
+                    <div class="lessonU3">
+
+                        <div class="lesson-title">Lesson 16</div>
+                        <div class="lesson-description">Whose lesson is that?</div>
+                    </div>
+                    <div class="lessonU3">
+
+                        <div class="lesson-title">Lesson 17</div>
+                        <div class="lesson-description">Fortune Teller for a day</div>
+                    </div>
+                    <div class="lessonU3">
+
+                        <div class="lesson-title">Lesson 18</div>
+                        <div class="lesson-description">Unit Review</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="itemB1" class="homepageitems" style="display: none;">
+            <p style="color: darkred;">Coming soon...</p>
+        </div>
+        <div id="itemstudents" class="homepageitems" style="display: none;">
+            <div id="itemStudentsContainer">
+                <div id="studentsHeader">
+                    <h3>Students</h3>
+                    <div id="studentsButtons">
+                        <button id="reloadButton" class="studentButton" onclick="populateStudentsTable"><i
+                                class="fa-solid fa-rotate"></i> &nbspUpdate</button>
+                        <button id="myBtn" class="studentButton"><i class="fa-solid fa-person-circle-plus"></i> &nbspNew
+                            Student</button>
+                    </div>
+                </div>
+                <div>
+                    <table id="studentsTable">
+                        <thead>
+                            <tr>
+                                <th class="sortable" onclick="sortTable(0)">Name</th>
+                                <th>Email</th>
+                                <th>Module</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="itemattendence" class="homepageitems" style="display: none;">
+            <div class="attendanceHeader">
+                <h3 class="itemTitle">New Lesson</h3>
+            </div>
+            <div id="itemAttendancesContainer">
+                <div>
+                    <table id="attendanceTable">
+                        <thead>
+                            <tr>
+                                <th class="sortable" onclick="sortTable(0)" style="width: 80%;">Name</th>
+                                <th>Module</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="itemrecords" class="homepageitems" style="display: none;">
+            <div class="stdHeader">
+                <h3 class="itemTitle">Class Records</h3>
+                <input type="text" id="searchInput" placeholder="Search for a student...">
+                <!-- Month filter -->
+                <select id="monthFilter">
+                    <option value="">All Months</option>
+                    <option value="01">January</option>
+                    <option value="02">February</option>
+                    <option value="03">March</option>
+                    <option value="04">April</option>
+                    <option value="05">May</option>
+                    <option value="06">June</option>
+                    <option value="07">July</option>
+                    <option value="08">August</option>
+                    <option value="09">September</option>
+                    <option value="10">October</option>
+                    <option value="11">November</option>
+                    <option value="12">December</option>
+                    <!-- Add more options for each month -->
+                </select>
+            </div>
+            <div id="itemRecordsContainer">
+                <div>
+                    <table id="recordsTable">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Lesson</th>
+                                <th>Date</th>
+                                <th>Notes</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Table body content will be populated dynamically -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        </div>
+    </main>
     <div id="myModal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -69,32 +278,6 @@
             </form>
         </div>
     </div>
-    <main id="mainContent">
-        <div id="itemstudents" class="homepageitems" style="display: none;">
-            <div id="itemStudentsContainer">
-                <div id="studentsHeader">
-                    <h3>Students Dashboard</h3>
-                    <div id="studentsButtons">
-                        <button id="reloadButton" class="studentButton" onclick="populateStudentsTable"><i class="fa-solid fa-rotate"></i> &nbspUpdate</button>
-                        <button id="myBtn" class="studentButton"><i class="fa-solid fa-person-circle-plus"></i> &nbspNew Student</button>
-                    </div>
-                </div>
-                <div>
-                    <table id="studentsTable">
-                        <thead>
-                            <tr>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Module</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-        </div>
-    </main>
     <script>
         function changeContent(menuitem, link) {
             var homepageitems = document.getElementsByClassName("homepageitems");
@@ -160,7 +343,48 @@
                 modal.style.display = "none";
             }
         }
-
+        function sortTable(colIndex) {
+            var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
+            table = document.getElementById("studentsTable");
+            switching = true;
+            dir = "asc";
+            while (switching) {
+                switching = false;
+                rows = table.rows;
+                for (i = 1; i < (rows.length - 1); i++) {
+                    shouldSwitch = false;
+                    x = rows[i].getElementsByTagName("td")[colIndex];
+                    y = rows[i + 1].getElementsByTagName("td")[colIndex];
+                    if (dir == "asc") {
+                        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    } else if (dir == "desc") {
+                        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
+                            shouldSwitch = true;
+                            break;
+                        }
+                    }
+                }
+                if (shouldSwitch) {
+                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+                    switching = true;
+                    switchcount++;
+                } else {
+                    if (switchcount == 0 && dir == "asc") {
+                        dir = "desc";
+                        switching = true;
+                    }
+                }
+            }
+            var ths = table.getElementsByTagName("th");
+            for (var j = 0; j < ths.length; j++) {
+                ths[j].classList.remove("sorted-asc", "sorted-desc");
+            }
+            var th = table.getElementsByTagName("th")[colIndex];
+            th.classList.add(dir === "asc" ? "sorted-asc" : "sorted-desc");
+        }
     </script>
 </body>
 
