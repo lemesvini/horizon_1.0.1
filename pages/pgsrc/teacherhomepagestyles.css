@@ -2,7 +2,7 @@ html, body {
     background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
-    
+    background-color: #eaeaea;
 }
 header {
     position: fixed;
@@ -12,7 +12,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #0a3153;
+    background-color: #9e2a2b;
     border-bottom: 1px solid lightgrey;
     height: 9vh;
     width: 100%;
@@ -49,7 +49,7 @@ header {
     justify-content: center;
 }
 .headerlinks a{
-    color: #0a3153;
+    color: black;
     
 }
 .layout {
@@ -89,10 +89,9 @@ main.full-width{
 #studentname{
     text-align: center;
     font-size: 22px;
-    color: #0a3153;
+    color: black;
 }
 #bottomline{
-    margin-top: 3dvh;
     background-color: #c3c3c3;
     width: 80%;
     height: 1px;
@@ -107,7 +106,7 @@ main.full-width{
     padding: 2%;
 }
 .menuitem{
-    padding: 6%;
+    padding: 3%;
     border-radius: 8px;
     width: 75%;
     color: #c3c3c3;
@@ -116,13 +115,41 @@ main.full-width{
     font-size: 18px;
     text-align: left;
 }
+#divmodules{
+    border-radius: 8px;
+    width: 75%;
+    color: #c3c3c3;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+#divmodules a{
+    padding: 3%;
+    margin: 4px;
+    border-radius: 8px;
+    width: 75%;
+    color: #c3c3c3;
+    text-decoration: none;
+    text-align: left;
+}
+#divmodules a:hover{
+    background-color: #EAEAEA;
+    color: black;
+}
 .menuitem:hover{
     background-color: #EAEAEA;
-    color: #0a3153;
+    color: black;
+}
+#divmodules a.selected{
+    background-color: #EAEAEA;
+    color: black;
 }
 .menuitem.selected{
     background-color: #EAEAEA;
-    color: #0a3153;
+    color: black;
     font-weight: 1000;
     cursor: pointer;
 }
@@ -141,10 +168,10 @@ main.full-width{
 #studentsHeader{
     display: flex;
     flex-direction: row;
-    height: 12dvh;
-    align-items: center;
     justify-content: space-between;
-    margin-bottom: 2%;
+    align-items: center;
+    padding: 18px;
+    gap: 16px;
 }
 #studentsButtons{
     width: 50%;
@@ -155,7 +182,7 @@ main.full-width{
     justify-content: flex-end;
 }
 #studentsHeader h3{
-    color: #0a3153;
+    color: black;
     font-size: x-large;
 }
 .studentButton{
@@ -179,20 +206,129 @@ main.full-width{
     padding: 2%;
     border-radius: 16px;
     box-shadow:  5px 5px 9px #d0d0d0;
+    text-align: left;
 }
 #studentsTable th{
     height: 50px;
     align-items: center;
     border-bottom: 1px solid lightgray;
-    
 }
-
 #studentsTable td{
     height: 40px;
     padding-left: 2%;
+    text-align: left;
+}
+.editButton, .classrecordButton{
+
+    font-size: 12px;
+    width: 40px;
+    height: 24px;
+    font-weight: 600;
+    border-radius: 4px;
+    color: black;
+    border: none;
+    cursor: pointer;
     text-align: center;
+    box-shadow:  1px 1px 2px #d0d0d0;
 }
 
+#itemAttendancesContainer{
+    width: 100%;
+}
+#itemRecordsContainer{
+    width: 100%;
+}
+#attendanceTable{
+    background-color: white;
+    width: 100%;
+    padding: 2%;
+    border-radius: 16px;
+    box-shadow:  5px 5px 9px #d0d0d0;
+    text-align: left;
+}
+#recordsTable{
+    background-color: white;
+    width: 100%;
+    padding: 2%;
+    border-radius: 16px;
+    box-shadow:  5px 5px 9px #d0d0d0;
+    text-align: left;
+}
+#attendanceTable th{
+    padding: 8px;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+#recordsTable th{
+    padding: 8px;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+#attendanceTable td{
+    height: 40px;
+    padding-left: 2%;
+    text-align: left;
+}
+#recordsTable td{
+    height: 40px;
+    padding-left: 2%;
+    text-align: left;
+}
+.studentName:hover{
+    background-color: #eeeeee;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.stdHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+    gap: 16px;
+}
+.attendanceHeader{
+    display: flex;
+    flex-direction: column; 
+    justify-content: left;
+    padding: 18px;
+    gap: 16px;
+}
+#attendanceTitle{
+    padding: 18px;
+    
+}
+#searchInput{
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    box-shadow:  5px 5px 9px #d0d0d0;
+}
+#searchInput::placeholder {
+    margin-left: 8px;
+    color: #999; 
+    font-size: 14px; 
+    font-family: Arial, sans-serif; 
+    padding-left: 8px;
+}
+#monthFilter{
+    width: 20%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    box-shadow:  5px 5px 9px #d0d0d0;
+}
+#monthFilter option{
+    background-color: #fff;
+    color: #333;
+    border: none;
+    font-size: 14px;
+}
+.itemTitle{
+    padding: 8px;
+    font-size: x-large;
+}
 /* Cadastro de novo aluno */
 .modal {
     width: 100%;
@@ -274,4 +410,151 @@ main.full-width{
 #bttnsubmit:hover{
     cursor: pointer;
     background-color: #3270c0;
+}
+/* A1A2 */
+.grid {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
+    padding: 15px;
+}
+.unit {
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding: 18px;
+    display: flex;
+    height: 19vh;
+    justify-content: flex-start;
+    gap: 16px;
+}
+.lessonU1, .lessonU2, .lessonU3 {
+    width: 18%;
+    min-width: 130px;
+    height: 21vh;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    transition: transform 0.3s ease-in-out;
+    box-shadow:  5px 5px 9px #d0d0d0;
+             
+}
+.lessonU1{
+    background: linear-gradient(to bottom, #335c67  45%, white 40%);
+}
+.lessonU2{
+    background: linear-gradient(to bottom, rgb(153, 194, 134)  45%, white 40%);
+}
+.lessonU3{
+    background: linear-gradient(to bottom, #e26d5c  45%, white 40%);
+}
+.lessonU1:hover{ 
+        background-color: white;  
+        scale: 1.1;
+        cursor: pointer;
+}
+.lessonU2:hover{ 
+    background-color: white;  
+    scale: 1.1;
+    cursor: pointer;
+}
+.lessonU3:hover{ 
+    background-color: white;  
+    scale: 1.1;
+    cursor: pointer;
+}
+.lesson-title {
+    color: white;
+    font-weight: bold;
+    margin-top: 2vh;
+    margin-bottom: 5px;
+    align-self: center;
+    transition: transform 0.3s ease-in-out;
+
+}
+.lesson-description {
+    color: black;
+    transition: transform 0.3s ease-in-out;
+    opacity: 0.8;
+    font-size: 16px;
+    padding: 4px;
+}
+.titleunit{
+    color: black;
+    margin-bottom: 0;
+}
+
+#popupContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Darker semi-transparent background */
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#attendancePopup {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+#attendancePopup h2 {
+    margin-top: 0;
+}
+
+#attendancePopup label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#attendancePopup input[type="date"],
+#attendancePopup input[type="text"],
+#attendancePopup textarea {
+    width: calc(100% - 12px);
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#attendancePopup textarea {
+    resize: vertical;
+}
+
+#submitAttendance {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#submitAttendance:hover {
+    background-color: #0056b3;
+}
+#closePopup{
+    position: absolute;
+    margin-left: 280px;
+    border: none;
+    background-color: transparent;
+    font-size: x-large;
+    color: lightgray;
+}
+#closePopup:hover{
+    color: black;
+    cursor: pointer;
 }
