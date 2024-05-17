@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +10,10 @@
     <script type="module" src="pgsrc/attendance.js" defer></script>
     <script type="module" src="pgsrc/newstudent.js" defer></script>
     <script type="module" src="pgsrc/records.js" defer></script>
+    <script src="pgsrc/sorttable.js"></script>
     <script src="pgsrc/editstudent.js"></script>
     <script src="https://kit.fontawesome.com/da41431bf6.js" crossorigin="anonymous"></script>
 </head>
-
 <body onload="setDefault()">
     <header id="header">
         <div class="header-icons">
@@ -174,10 +173,10 @@
                     </div>
                 </div>
                 <div>
-                    <table id="studentsTable">
+                    <table id="studentsTable" class="sortable">
                         <thead>
                             <tr>
-                                <th class="sortable" onclick="sortTable(0)">Name</th>
+                                <th  onclick="sortTable(0)">Name</th>
                                 <th>Email</th>
                                 <th>Module</th>
                             </tr>
@@ -194,10 +193,10 @@
             </div>
             <div id="itemAttendancesContainer">
                 <div>
-                    <table id="attendanceTable">
+                    <table id="attendanceTable" class="sortable">
                         <thead>
                             <tr>
-                                <th class="sortable" onclick="sortTable(0)" style="width: 80%;">Name</th>
+                                <th style="width: 80%;">Name</th>
                                 <th>Module</th>
                             </tr>
                         </thead>
@@ -231,7 +230,7 @@
             </div>
             <div id="itemRecordsContainer">
                 <div>
-                    <table id="recordsTable">
+                    <table id="recordsTable" class=”sortable”>
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -343,49 +342,6 @@
                 modal.style.display = "none";
             }
         }
-        function sortTable(colIndex) {
-            var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-            table = document.getElementById("studentsTable");
-            switching = true;
-            dir = "asc";
-            while (switching) {
-                switching = false;
-                rows = table.rows;
-                for (i = 1; i < (rows.length - 1); i++) {
-                    shouldSwitch = false;
-                    x = rows[i].getElementsByTagName("td")[colIndex];
-                    y = rows[i + 1].getElementsByTagName("td")[colIndex];
-                    if (dir == "asc") {
-                        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-                            shouldSwitch = true;
-                            break;
-                        }
-                    } else if (dir == "desc") {
-                        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-                            shouldSwitch = true;
-                            break;
-                        }
-                    }
-                }
-                if (shouldSwitch) {
-                    rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-                    switching = true;
-                    switchcount++;
-                } else {
-                    if (switchcount == 0 && dir == "asc") {
-                        dir = "desc";
-                        switching = true;
-                    }
-                }
-            }
-            var ths = table.getElementsByTagName("th");
-            for (var j = 0; j < ths.length; j++) {
-                ths[j].classList.remove("sorted-asc", "sorted-desc");
-            }
-            var th = table.getElementsByTagName("th")[colIndex];
-            th.classList.add(dir === "asc" ? "sorted-asc" : "sorted-desc");
-        }
     </script>
 </body>
-
 </html>
