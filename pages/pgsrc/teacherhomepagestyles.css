@@ -558,3 +558,6 @@ main.full-width{
     color: black;
     cursor: pointer;
 }
+table th:hover{
+    cursor: pointer;
+}
