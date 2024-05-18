@@ -561,3 +561,19 @@ main.full-width{
 table th:hover{
     cursor: pointer;
 }
+.recordsbutton{
+    border: none;
+    background-color: #eaeaea;
+    color: black;
+    height: 24px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#deleteButton:hover{
+    background-color: rgb(235, 60, 60);
+    color: white;
+}
+#editButton:hover{
+    background-color: #3270c0;
+    color: white;
+}
