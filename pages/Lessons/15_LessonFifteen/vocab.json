@@ -1,0 +1,13 @@
+{
+    "vocab1EN": ["Dream", "Goal", "Achievement", "Struggle", "Effort"],
+    "vocab1PT": ["Sonho", "Objetivo", "Conquista", "Batalha", "Esforço"],
+
+    "vocab2EN": ["Failure", "If", "Else", "Unless", "Otherwise"],
+    "vocab2PT": ["Falha / Fracassoo", "Se", "Senão", "A menos que", "Caso contrário"],
+
+    "vocab3EN": ["Would go", "Would be", "Would like", "Would buy"],
+    "vocab3PT": ["Iria", "Seria", "Gostaria", "Compraria"],
+
+    "vocab4EN": ["to Keep / Kept / Kept", "to Become / Became / Become", "to Be Worth", "to Believe / Believed / Believed"],
+    "vocab4PT": ["Manter", "Tornar-se", "Valer", "Acreditar"]
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Fifteen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="src/logowhite.png">
+    <script src="https://kit.fontawesome.com/da41431bf6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="headericons">
+            <a href="#" id="home" onclick="window.location.href = '../../A1A2.html'"><i class="fa-solid fa-house"></i> Home</a>
+            <a id="dictionary" href="#" onclick="window.open('https://dictionary.cambridge.org/', '_blank')"><i class="fa-solid fa-spell-check"></i> Dictionary</a>
+            <a href="#" id="logout" onclick="window.location.href = '/../index.html'"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+        </div>
+        <!--<audio id="audiocontrol" controls controlsList="nodownload noplaybackrate" style="display: none;">
+            <source src="HTG-CL2.mp3" type="audio/mp3">
+        </audio>-->
+    </header>
+    <aside>
+        <h3>What if?</h3>
+        <div id="container">
+            <a href="#" id="WarmUpLink" class="classitem" onclick="changeContent('WarmUp', this); callframe();"><i class="fa-solid fa-fire"></i></a>
+            <a href="#" id="VocabLink" class="classitem" onclick="changeContent('Vocabulary', this); killframe();"><i class="fa-solid fa-spell-check"></i></a>
+            <a href="#" id="InputOneLink" class="classitem" onclick="changeContent('InputOne', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="InputTwoLink" class="classitem" onclick="changeContent('InputTwo', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="PracticeLink" class="classitem" onclick="changeContent('Practice', this); callframe();"><i class="fa-solid fa-pen"></i></a>
+        </div>
+    </aside>
+    <main>
+        <div id="mainframe"></div>
+        <div id="classWarmUp" class="classContent" style="display: none;">
+            <div class="warmupitem">
+                <h3>O que você lembra da Lesson Fourteen?</h3>
+            </div>
+            <div class="warmupitem">
+                <h3>O que você faria com 1 milhão de dólares?</h3>
+            </div>
+        </div>
+        <div id="classVocabulary" class="classContent" style="display: none;">
+            <div id="vocabgrid" class="vocabtop">
+                <div id="vocab1">
+                </div>
+                <div id="vocab2" class="vocabtop">
+                </div>
+                <div class="vocab3">
+                    <div id="vocab3col1" class="vocab3col">
+                    </div>
+                    <div id="vocab3col2" class="vocab3col">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="classInputOne" class="classContent" style="display: none;">
+            <div id="inp1container">
+                <div class="inputoneitem" id="inputoneitem1"> 
+                    <h2><i class="fa-solid fa-circle-plus"></i> | Would</h2>
+                    <h4 style="text-align: center;">Would is a Modal Verb</h4>
+                    <p style="color: gray;">We must pay attention to the next verb!</p>
+                    <p>I <strong style="color: #9e2a2b;">would like</strong> a coffee, please.</p>
+                    <p>She <strong style="color: #9e2a2b;">would buy</strong> this dress.</p>
+                    <p>We <strong style="color: #9e2a2b;">would not have</strong> many pets in this house.</p>
+                    <p>He <strong style="color: #9e2a2b;">wouldn't go</strong> to Italy.</p>
+                    <p><strong style="color: #9e2a2b;">Would you like</strong> to talk to her?</p>
+                </div>
+                <div class="inputoneitem" id="inputoneitem2">
+                </div>
+            </div>
+        </div>
+        <div id="classInputTwo" class="classContent" style="display: none;">
+            <h2><i class="fa-solid fa-circle-plus"></i> | Second Conditional</h2>
+            <p style="text-align: center;color: grey;"><strong style="color: #9e2a2b; font-size: larger;">[If + Simple Past + Would]</strong></p>
+            <br>
+            <hr>
+            <div id="tobe">
+                <div id="one" style="text-align: center;">
+                    <p style="color: grey;">condition</p>
+                    <p><strong style="color: #9e2a2b;">If I had</strong> more money</p>
+                    <p><strong style="color: #9e2a2b;">If I had</strong> more time</p>
+                    <p><strong style="color: #9e2a2b;">If I traveled</strong> more often</p>
+                    <p><strong style="color: #9e2a2b;">If I didn't work</strong> on Saturdays</p>
+                </div>
+                <div id="two" style="text-align: center;">
+                    <p style="color: grey;">consequence</p>
+                    <p><strong style="color: #9e2a2b;">I would travel</strong> around the world!</p>
+                    <p><strong style="color: #9e2a2b;">I would exercise</strong> more.</p>
+                    <p><strong style="color: #9e2a2b;">I would be</strong> happy!</p>
+                    <p><strong style="color: #9e2a2b;">I would sleep</strong> a lot more.</p>
+                </div>
+            </div>
+        </div>
+        <div id="classPractice" class="classContent" style="display: none;">
+            <div id="actonecontainer">
+                <div id="actone">
+                    <h3>Conversation Questions</h3>
+                    <h4>Answer the questions below:</h4>
+                    
+                    <div>
+                        <p>If you won the lottery:</p>
+                        <p> - Where would you go?</p>
+                        <p> - What would you buy?</p>
+                        <p> - Who would you tell?</p>
+                        <p> - Where would you live?</p>
+                    </div>
+                </div>
+                <div id="actimg"></div>
+            </div>
+            
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
