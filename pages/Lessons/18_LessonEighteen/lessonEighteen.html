@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Eighteen - Unit Review</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../../scr/logowhite.png">
+    <script src="https://kit.fontawesome.com/da41431bf6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="headericons">
+            <a href="#" id="home" onclick="window.location.href = '../../A1A2.html'"><i class="fa-solid fa-house"></i>
+                Home</a>
+            <a id="dictionary" href="#" onclick="window.open('https://dictionary.cambridge.org/', '_blank')"><i
+                    class="fa-solid fa-spell-check"></i> Dictionary</a>
+            <a href="#" id="logout" onclick="window.location.href = '/../index.html'"><i
+                    class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+        </div>
+        <!--<audio id="audiocontrol" controls controlsList="nodownload noplaybackrate" style="display: none;">
+            <source src="HTG-CL2.mp3" type="audio/mp3">
+        </audio>-->
+    </header>
+    <aside>
+        <h3>Unit Three Review</h3>
+        <div id="container">
+            <a href="#" id="WarmUpLink" class="classitem" onclick="changeContent('WarmUp', this); callframe();"><i
+                    class="fa-solid fa-fire"></i></a>
+            <a href="#" id="InputOneLink" class="classitem" onclick="changeContent('InputOne', this); callframe();"><i
+                    class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="InputTwoLink" class="classitem" onclick="changeContent('InputTwo', this); callframe();"><i
+                    class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="InputThreeLink" class="classitem"
+                onclick="changeContent('InputThree', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+        </div>
+    </aside>
+    <main>
+        <div id="mainframe"></div>
+        <div id="classWarmUp" class="classContent" style="display: none;">
+            <div class="warmupitem">
+                <h3>Você tem alguma dúvida sobre a unidade?</h3>
+            </div>
+            <div class="warmupitem">
+                <h3>O que mais chamou sua atenção até aqui?</h3>
+            </div>
+        </div>
+        <div id="classInputOne" class="classContent" style="display: none;">
+            <h2 id="h2inputone"><i class="fa-solid fa-circle-plus"></i> | Verb To Be</h2>
+            <div id="tobe">
+                <div id="one">
+                    <h4>Regular Verbs: add "<strong>ed</strong>"</h4>
+                    <p>We work<strong style="color: #9e2a2b;">ed</strong> at the hospital last year.</p>
+                    <p>She lik<strong style="color: #9e2a2b;">ed</strong> my story.</p>
+                    <p>She play<strong style="color: #9e2a2b;">ed</strong> many sports.</p>
+                    <p style="color: grey; border-bottom: 1px solid grey; padding: 2px;">Consonant + "Y", add "ies"</p>
+                    <p>I stud<strong style="color: #9e2a2b;">ied</strong> Spanish last year.</p>
+
+                </div>
+                <div id="two">
+                    <h4>Irregular Verbs: It's a new word</h4>
+                    <p>Joanna <strong style="color: #9e2a2b;">had</strong> chicken for dinner yesterday.</p>
+                    <p>I <strong style="color: #9e2a2b;">went</strong> to the beach and felt better.</p>
+                    <p style="color: grey; border-bottom: 1px solid grey; padding: 2px;">Past Verb to Be</p>
+                    <p>I <strong style="color: #9e2a2b;">was</strong> sick yesterday.</p>
+                    <p>They <strong style="color: #9e2a2b;">weren't</strong> feeling well.</p>
+
+
+                </div>
+            </div>
+        </div>
+        <div id="classInputTwo" class="classContent" style="display: none;">
+            <h2 id="h2inputone"><i class="fa-solid fa-circle-plus"></i> | Auxiliaries</h2>
+            <div id="tobe">
+                <div id="one"
+                    style="text-align: left; display: flex; flex-direction: row; border: 2px solid #9e2a2b; border-radius: 16px;">
+                    <div id="pronouns" style="text-align: center;">
+                        <p style="color: grey;">Subjects</p>
+                        <p><strong>I</strong></p>
+                        <p><strong>You</strong></p>
+                        <p><strong>He</strong></p>
+                        <p><strong>She</strong></p>
+                        <p><strong>It</strong></p>
+                        <p><strong>We</strong></p>
+                        <p><strong>They</strong></p>
+                    </div>
+                    <div id="possessiveadj" style="text-align: center;">
+                        <p style="color: grey;">Adjectives</p>
+                        <p>My</p>
+                        <p>Your</p>
+                        <p>His</p>
+                        <p>Her</p>
+                        <p>Its</p>
+                        <p>Our</p>
+                        <p>Their</p>
+                    </div>
+                    <div id="possessivepronouns" style="text-align: center;">
+                        <p style="color: grey;">Pronouns</p>
+                        <p><strong style="color: #9e2a2b;">Mine</strong></p>
+                        <p><strong style="color: #9e2a2b;">Yours</strong></p>
+                        <p><strong style="color: #9e2a2b;">His</strong></p>
+                        <p><strong style="color: #9e2a2b;">Hers</strong></p>
+                        <p><strong style="color: #9e2a2b;">Its</strong></p>
+                        <p><strong style="color: #9e2a2b;">Ours</strong></p>
+                        <p><strong style="color: #9e2a2b;">Theirs</strong></p>
+                    </div>
+                </div>
+                <div id="two">
+                    <p>My car is blue and <strong style="color: #9e2a2b;">yours</strong> is red.</p>
+                    <p>I lent you my pen and she borrowed <strong style="color: #9e2a2b;">his</strong>.</p>
+                    <br>
+                    <p>A: Whose cellphone is this?<strong style="color: #9e2a2b;"></strong></p>
+                    <p>B: It's <strong style="color: #9e2a2b;">hers</strong>.</p>
+                    <br>
+                    <p>A: Whose notebook is that?<strong style="color: #9e2a2b;"></strong></p>
+                    <p>B: It's <strong style="color: #9e2a2b;">theirs</strong>!</p>
+                </div>
+            </div>
+        </div>
+        <div id="classInputThree" class="classContent" style="display: none;">
+            <h2 id="h2inputone" style="margin-left: 40px;"><i class="fa-solid fa-circle-plus"></i> | Future</h2>
+            <div id="tobe">
+                <div id="one">
+                    <h4 style="text-align: center;"><strong style="background-color: #9e2a2b;">Will</strong></h4>
+                    <p>I <strong style="color: #9e2a2b;">will</strong> take a shower before work.</p>
+                    <p>She <strong style="color: #9e2a2b;">will</strong> be here on time.</p>
+                    <p>I <strong style="color: #9e2a2b;">will not</strong> go to work today.</p>
+                    <p>He <strong style="color: #9e2a2b;">won't</strong> come to the party.</p>
+                    <p><strong style="color: #9e2a2b;">Will</strong> you talk to him?</p>
+                </div>
+                <div id="two">
+                    <h4 style="text-align: center;"><strong style="background-color: #9e2a2b;">To be Going To</strong>
+                    </h4>
+                    <p>I <strong style="color: #9e2a2b;">am going to</strong> buy a new house.</p>
+                    <p>You<strong style="color: #9e2a2b;">'re going to</strong> buy a new car.</p>
+                    <p>He <strong style="color: #9e2a2b;">isn't going to</strong> travel to Europe.</p>
+                    <p>She <strong style="color: #9e2a2b;">'s gonna</strong> go to college.</p>
+                    <p><strong style="color: #9e2a2b;">Are you gonna</strong> call her?</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
