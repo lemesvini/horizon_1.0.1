@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Eight</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="src/logowhite.png">
+    <script src="https://kit.fontawesome.com/da41431bf6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="headericons">
+            <a href="#" id="home" onclick="window.location.href = '../../A1A2.html'"><i class="fa-solid fa-house"></i> Home</a>
+            <a id="dictionary" href="#" onclick="window.open('https://dictionary.cambridge.org/', '_blank')"><i class="fa-solid fa-spell-check"></i> Dictionary</a>
+            <a href="#" id="logout" onclick="window.location.href = '/../index.html'"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+        </div>
+        <!--<audio id="audiocontrol" controls controlsList="nodownload noplaybackrate" style="display: none;">
+            <source src="HTG-CL2.mp3" type="audio/mp3">
+        </audio>-->
+    </header>
+    <aside>
+        <h3>Numbers and Time</h3>
+        <div id="container">
+            <a href="#" id="WarmUpLink" class="classitem" onclick="changeContent('WarmUp', this); callframe();"><i class="fa-solid fa-fire"></i></a>
+            <a href="#" id="VocabLink" class="classitem" onclick="changeContent('Vocabulary', this); killframe();"><i class="fa-solid fa-spell-check"></i></a>
+           
+            <a href="#" id="InputTwoLink" class="classitem" onclick="changeContent('InputTwo', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="InputThreeLink" class="classitem" onclick="changeContent('InputThree', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="PracticeLink" class="classitem" onclick="changeContent('Practice', this); callframe();"><i class="fa-solid fa-pen"></i></a>
+        </div>
+    </aside>
+    <main>
+        <div id="mainframe"></div>
+        <div id="classWarmUp" class="classContent" style="display: none;">
+            <div class="warmupitem">
+                <h3>O que você lembra da Lesson Seven?</h3>
+            </div>
+            <div class="warmupitem">
+                <h3>Você é bom com números?</h3>
+            </div>
+        </div>
+        <div id="classVocabulary" class="classContent" style="display: none;">
+            <div id="vocabgrid" class="vocabtop">
+                <div id="vocab1">
+                </div>
+                <div id="vocab2" class="vocabtop">
+                </div>
+                <div class="vocab3">
+                    <div id="vocab3col1" class="vocab3col">
+                    </div>
+                    <div id="vocab3col2" class="vocab3col">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="classInputTwo" class="classContent" style="display: none;">
+            <h2><i class="fa-solid fa-circle-plus"></i> | Many & Much</h2>
+            <hr>
+            <div id="tobe">
+                <div id="one">
+                    <h4><strong style="background-color: #9e2a2b;">Many <i class="fa-regular fa-circle-right"></i> Countable things</strong></h4>
+                    <p><strong style="color: #9e2a2b;">How many</strong> books do you have?</p>
+                    <p><strong style="color: #9e2a2b;">How many</strong> siblings do you have?</p>
+                    <p>There are<strong style="color: #9e2a2b;"> many</strong> people here.</p>
+                    <p>She has<strong style="color: #9e2a2b;"> many</strong> things to do.</p>
+
+                </div>
+                <div id="two">
+                    <h4><strong style="background-color: #9e2a2b;">Much <i class="fa-regular fa-circle-right"></i> Uncountable things</strong></h4>
+                    <p><strong style="color: #9e2a2b;">How much</strong> money do you have?.</p>
+                    <p><strong style="color: #9e2a2b;">How much</strong> water do you drink in a day?</p>
+                    <p>I have<strong style="color: #9e2a2b;"> much</strong> respect for you.</p>
+                    <p>She has<strong style="color: #9e2a2b;"> much</strong> experience.</p>
+                </div>
+            </div>
+        </div>
+        <div id="classInputThree" class="classContent" style="display: none;">
+            <h2 id="input3title"><i class="fa-solid fa-circle-plus"></i> | Days and Numbers</h2>
+            <div id="input3container" style="display: flex; flex-direction: row;">
+                <div id="input3-1">
+                    <p><strong style="color: #9e2a2b;">Monday</strong> - Segunda-feira</p>
+                    <p><strong style="color: #9e2a2b;">Tuesday</strong> - Terça-feira</p>
+                    <p><strong style="color: #9e2a2b;">Wednesday</strong> - Quarta-feira</p>
+                    <p><strong style="color: #9e2a2b;">Thursday</strong> - Quinta-feira</p>
+                    <p><strong style="color: #9e2a2b;">Friday</strong> - Sexta-feira</p>
+                    <p><strong style="color: #9e2a2b;">Saturday</strong> - Sábado</p>
+                    <p><strong style="color: #9e2a2b;">Sunday</strong> - Domingo</p>
+                    <p><strong style="color: #9e2a2b;">Weekday</strong> - Dia de semana</p>
+                    <p><strong style="color: #9e2a2b;">Weekend</strong> - Final de semana</p>
+                    <p><strong style="color: #9e2a2b;">Day off</strong> - Dia de folga</p>
+                </div>
+                <div id="input3-2" style="display: flex; flex-direction: row;">
+                    <div id="input3-2-1">
+                        <p>1 - <strong style="color: #9e2a2b;">One</strong></p>
+                        <p>2 - <strong style="color: #9e2a2b;">Two</strong></p>
+                        <p>3 - <strong style="color: #9e2a2b;">Three</strong></p>
+                        <p>4 - <strong style="color: #9e2a2b;">Four</strong></p>
+                        <p>5 - <strong style="color: #9e2a2b;">Five</strong></p>
+                        <p>6 - <strong style="color: #9e2a2b;">Six</strong></p>
+                        <p>7 - <strong style="color: #9e2a2b;">Seven</strong></p>
+                        <p>8 - <strong style="color: #9e2a2b;">Eight</strong></p>
+                        <p>9 - <strong style="color: #9e2a2b;">Nine</strong></p>
+                        <p>10 - <strong style="color: #9e2a2b;">Ten</strong></p>
+                    </div>
+                    <div id="input3-2-2">
+                        <p>11 - <strong style="color: #9e2a2b;">Eleven</strong></p>
+                        <p>12 - <strong style="color: #9e2a2b;">Twelve</strong></p>
+                        <p>13 - <strong style="color: #9e2a2b;">Thirteen</strong></p>
+                        <p>14 - <strong style="color: #9e2a2b;">Fourteen</strong></p>
+                        <p>15 - <strong style="color: #9e2a2b;">Fifteen</strong></p>
+                        <p>16 - <strong style="color: #9e2a2b;">Sixteen</strong></p>
+                        <p>17 - <strong style="color: #9e2a2b;">Seventeen</strong></p>
+                        <p>18 - <strong style="color: #9e2a2b;">Eighteen</strong></p>
+                        <p>19 - <strong style="color: #9e2a2b;">Nineteen</strong></p>
+                        <p>20 - <strong style="color: #9e2a2b;">Twenty</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="classPractice" class="classContent" style="display: none;">
+            <div id="actonecontainer">
+                <div id="actone">
+                    <h3>Conversation Questions</h3>
+                    <h4>Answer the questions below:</h4>
+                    
+                    <div>
+                        <p>What is your favorite color? Why?</p>
+                        <p>Who is your best friend?</p>
+                        <p>Where do you work?</p>
+                        <p>When do you like to listen to music?</p>
+                        <p>Why do you want to speak English?</p>
+                    </div>
+                </div>
+                <div id="actimg"></div>
+            </div>
+            
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

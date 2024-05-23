@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Twelve - Unit Review</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../../scr/logowhite.png">
+    <script src="https://kit.fontawesome.com/da41431bf6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div id="headericons">
+            <a href="#" id="home" onclick="window.location.href = '../../A1A2.html'"><i class="fa-solid fa-house"></i>
+                Home</a>
+            <a id="dictionary" href="#" onclick="window.open('https://dictionary.cambridge.org/', '_blank')"><i
+                    class="fa-solid fa-spell-check"></i> Dictionary</a>
+            <a href="#" id="logout" onclick="window.location.href = '/../index.html'"><i
+                    class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+        </div>
+        <!--<audio id="audiocontrol" controls controlsList="nodownload noplaybackrate" style="display: none;">
+            <source src="HTG-CL2.mp3" type="audio/mp3">
+        </audio>-->
+    </header>
+    <aside>
+        <h3>Unit Two Review</h3>
+        <div id="container">
+            <a href="#" id="WarmUpLink" class="classitem" onclick="changeContent('WarmUp', this); callframe();"><i
+                    class="fa-solid fa-fire"></i></a>
+            <a href="#" id="InputOneLink" class="classitem" onclick="changeContent('InputTwo', this); callframe();"><i
+                    class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="InputTwoLink" class="classitem" onclick="changeContent('InputOne', this); callframe();"><i
+                    class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="InputThreeLink" class="classitem"
+                onclick="changeContent('InputThree', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+        </div>
+    </aside>
+    <main>
+        <div id="mainframe"></div>
+        <div id="classWarmUp" class="classContent" style="display: none;">
+            <div class="warmupitem">
+                <h3>Você tem alguma dúvida sobre a unidade?</h3>
+            </div>
+            <div class="warmupitem">
+                <h3>O que mais chamou sua atenção até aqui?</h3>
+            </div>
+        </div>
+        <div id="classInputOne" class="classContent" style="display: none;">
+            <h2 style="color: #18396e; padding: 3%;"><i class="fa-solid fa-circle-plus"></i> | Comparatives</h2>
+            <hr style="width: 90%;">
+            <div id="tobe">
+                <div id="one">
+                    <h4><strong style="background-color: #9e2a2b;">Short Adjectives <i
+                                class="fa-regular fa-circle-right"></i> add "er"</strong></h4>
+                    <p>I am tall<strong style="color: #9e2a2b;">er than</strong> you.</p>
+                    <p>She is short<strong style="color: #9e2a2b;">er than</strong> me.</p>
+                    <p>I am happ<strong style="color: #9e2a2b;">ier </strong> now.</p>
+                    <p>I am strong<strong style="color: #9e2a2b;">er than</strong> my brother.</p>
+
+                </div>
+                <div id="two">
+                    <h4><strong style="background-color: #9e2a2b;">Long Adjectives <i
+                                class="fa-regular fa-circle-right"></i> [more/less + (adj)]</strong></h4>
+                    <p>You are <strong style="color: #9e2a2b;">more intelligent than</strong> me.</p>
+                    <p>She is <strong style="color: #9e2a2b;">more beaultiful than</strong> her mother.</p>
+                    <p>I am <strong style="color: #9e2a2b;">more patient than</strong> him.</p>
+                    <p>We are <strong style="color: #9e2a2b;">more stressed than</strong> last year.</p>
+                </div>
+            </div>
+        </div>
+        <div id="classInputTwo" class="classContent" style="display: none;">
+            <h2><i class="fa-solid fa-circle-plus"></i> | There to Be</h2>
+            <hr>
+            <div id="tobe">
+                <div id="one">
+                    <h4><strong style="background-color: #9e2a2b;">Affirmative</strong></h4>
+                    <p><strong style="color: #9e2a2b;">There is</strong> a song playing.</p>
+                    <p><strong style="color: #9e2a2b;">There is</strong> a car in the garage.</p>
+                    <p><strong style="color: #9e2a2b;">There are</strong> people in this house.</p>
+                    <p><strong style="color: #9e2a2b;">There are</strong> toys on the couch.</p>
+
+                </div>
+                <div id="two">
+                    <h4><strong style="background-color: #9e2a2b;">Negative</strong></h4>
+                    <p><strong style="color: #9e2a2b;">There is not</strong> a song playing.</p>
+                    <p><strong style="color: #9e2a2b;">There isn't</strong> a car in the garage.</p>
+                    <p><strong style="color: #9e2a2b;">There are not</strong> people in this house.</p>
+                    <p><strong style="color: #9e2a2b;">There aren't</strong> toys on the couch.</p>
+                </div>
+                <div id="three">
+                    <h4><strong style="background-color: #9e2a2b;">Interrogative</strong></h4>
+                    <p><strong style="color: #9e2a2b;">Is there</strong> a song playing?</p>
+                    <p><strong style="color: #9e2a2b;">Is there</strong> a car in the garage?</p>
+                    <p><strong style="color: #9e2a2b;">Are there</strong> people in this house?</p>
+                    <p><strong style="color: #9e2a2b;">Are there</strong> toys on the couch?</p>
+                </div>
+            </div>
+        </div>
+        <div id="classInputThree" class="classContent" style="display: none; width: 100%; height: 100%;">
+            <h2 id="input3title" style="color: #18396e; padding: 3%;"><i class="fa-solid fa-circle-plus"></i> | Superlatives</h2>
+            <hr style="width: 90%;">
+            <div id="tobe">
+                <div id="one">
+                    <h4><strong style="background-color: #9e2a2b;">Short Adjectives <i
+                                class="fa-regular fa-circle-right"></i> add "est"</strong></h4>
+                    <p>I am the tall<strong style="color: #9e2a2b;">est </strong> in my family.</p>
+                    <p>She is the short<strong style="color: #9e2a2b;">est </strong> in the group.</p>
+                    <p>I am the happ<strong style="color: #9e2a2b;">iest </strong> person I know.</p>
+                    <p>He is the strong<strong style="color: #9e2a2b;">est </strong> superhero.</p>
+
+                </div>
+                <div id="two">
+                    <h4><strong style="background-color: #9e2a2b;">Long Adjectives <i
+                                class="fa-regular fa-circle-right"></i> [most/least + (adj)]</strong></h4>
+                    <p>You are the <strong style="color: #9e2a2b;">most intelligent </strong> person here.</p>
+                    <p>She is the <strong style="color: #9e2a2b;">most beaultiful </strong> actress.</p>
+                    <p>I am the <strong style="color: #9e2a2b;">most patient </strong> teacher.</p>
+                    <p>We are the <strong style="color: #9e2a2b;">most stressed </strong> students ever.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

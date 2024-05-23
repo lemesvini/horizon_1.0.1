@@ -1,0 +1,13 @@
+{
+    "vocab1EN": ["Always", "Often", "Usually", "Normally", "Rarely / Seldom"],
+    "vocab1PT": ["Sempre", "Frequentemente", "Geralmente", "Normalmente", "Raramente"],
+
+    "vocab2EN": ["Never", "At least", "Only", "Once", "Twice"],
+    "vocab2PT": ["Nunca", "Pelo menos", "Somente", "Uma vez", "Duas vezes"],
+
+    "vocab3EN": ["Reading", "Painting", "Walking", "Running"],
+    "vocab3PT": ["Leitura", "Pintura", "Caminhar, Caminhada", "Correr, Corrida"],
+
+    "vocab4EN": ["to Play / Played / Played", "to Enjoy / Enjoyed / Enjoyed", "to Listen (to) / Listened / Listened", "to Cook / Cooked / Cooked"],
+    "vocab4PT": ["Jogar, Tocar", "Aproveitar, apreciar", "Ouvir", "Cozinhar"]
+}

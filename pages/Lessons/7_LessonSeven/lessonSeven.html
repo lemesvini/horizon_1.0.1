@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Seven</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="src/logowhite.png">
+    <script src="https://kit.fontawesome.com/da41431bf6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="headericons">
+            <a href="#" id="home" onclick="window.location.href = '../../A1A2.html'"><i class="fa-solid fa-house"></i> Home</a>
+            <a id="dictionary" href="#" onclick="window.open('https://dictionary.cambridge.org/', '_blank')"><i class="fa-solid fa-spell-check"></i> Dictionary</a>
+            <a href="#" id="logout" onclick="window.location.href = '/../index.html'"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+        </div>
+        <!--<audio id="audiocontrol" controls controlsList="nodownload noplaybackrate" style="display: none;">
+            <source src="HTG-CL2.mp3" type="audio/mp3">
+        </audio>-->
+    </header>
+    <aside>
+        <h3>Places and Directions</h3>
+        <div id="container">
+            <a href="#" id="WarmUpLink" class="classitem" onclick="changeContent('WarmUp', this); callframe();"><i class="fa-solid fa-fire"></i></a>
+            <a href="#" id="VocabLink" class="classitem" onclick="changeContent('Vocabulary', this); killframe();"><i class="fa-solid fa-spell-check"></i></a>
+            <a href="#" id="InputOneLink" class="classitem" onclick="changeContent('InputOne', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="InputTwoLink" class="classitem" onclick="changeContent('InputTwo', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="PracticeLink" class="classitem" onclick="changeContent('Practice', this); callframe();"><i class="fa-solid fa-pen"></i></a>
+        </div>
+    </aside>
+    <main>
+        <div id="mainframe"></div>
+        <div id="classWarmUp" class="classContent" style="display: none;">
+            <div class="warmupitem">
+                <h3>O que você lembra da Unit One?</h3>
+            </div>
+            <div class="warmupitem">
+                <h3>Você é bom com direções?</h3>
+            </div>
+        </div>
+        <div id="classVocabulary" class="classContent" style="display: none;">
+            <div id="vocabgrid" class="vocabtop">
+                <div id="vocab1">
+                </div>
+                <div id="vocab2" class="vocabtop">
+                </div>
+                <div class="vocab3">
+                    <div id="vocab3col1" class="vocab3col">
+                    </div>
+                    <div id="vocab3col2" class="vocab3col">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="classInputOne" class="classContent" style="display: none;">
+            <div id="inp1container">
+                <div class="inputoneitem" id="inputoneitem1"> 
+                    <h2><i class="fa-solid fa-circle-plus"></i> | Wh-Questions</h2>
+                    <br>
+                    <p><strong style="color: #9e2a2b;">What </strong><i class="fa-regular fa-circle-right" style="color: #18396e;"></i> What is your address?</p>
+                    <p><strong style="color: #9e2a2b;">When </strong><i class="fa-regular fa-circle-right" style="color: #18396e;"></i> When is your trip to the USA?</p>
+                    <p><strong style="color: #9e2a2b;">Where </strong><i class="fa-regular fa-circle-right" style="color: #18396e;"></i> Where is the gas station?</p>
+                    <p><strong style="color: #9e2a2b;">Who </strong><i class="fa-regular fa-circle-right" style="color: #18396e;"></i> Who is that boy?</p>
+                    <p><strong style="color: #9e2a2b;">Why </strong><i class="fa-regular fa-circle-right" style="color: #18396e;"></i> Why do you like Brazil?</p>
+                    <p><strong style="color: #9e2a2b;">Because </strong><i class="fa-regular fa-circle-right" style="color: #18396e;"></i> Because it's beautiful?</p>
+
+                </div>
+                <div class="inputoneitem" id="inputoneitem2">
+                </div>
+            </div>
+        </div>
+        <div id="classInputTwo" class="classContent" style="display: none;">
+            <h2><i class="fa-solid fa-circle-plus"></i> | There to Be</h2>
+            <hr>
+            <div id="tobe">
+                <div id="one">
+                    <h4><strong style="background-color: #9e2a2b;">Affirmative</strong></h4>
+                    <p><strong style="color: #9e2a2b;">There is</strong> a song playing.</p>
+                    <p><strong style="color: #9e2a2b;">There is</strong> a car in the garage.</p>
+                    <p><strong style="color: #9e2a2b;">There are</strong> people in this house.</p>
+                    <p><strong style="color: #9e2a2b;">There are</strong> toys on the couch.</p>
+
+                </div>
+                <div id="two">
+                    <h4><strong style="background-color: #9e2a2b;">Negative</strong></h4>
+                    <p><strong style="color: #9e2a2b;">There is not</strong> a song playing.</p>
+                    <p><strong style="color: #9e2a2b;">There isn't</strong> a car in the garage.</p>
+                    <p><strong style="color: #9e2a2b;">There are not</strong> people in this house.</p>
+                    <p><strong style="color: #9e2a2b;">There aren't</strong> toys on the couch.</p>
+                </div>
+                <div id="three">
+                    <h4><strong style="background-color: #9e2a2b;">Interrogative</strong></h4>
+                    <p><strong style="color: #9e2a2b;">Is there</strong> a song playing?</p>
+                    <p><strong style="color: #9e2a2b;">Is there</strong> a car in the garage?</p>
+                    <p><strong style="color: #9e2a2b;">Are there</strong> people in this house?</p>
+                    <p><strong style="color: #9e2a2b;">Are there</strong> toys on the couch?</p>
+                </div>
+            </div>
+        </div>
+        <div id="classPractice" class="classContent" style="display: none;">
+            <div id="actonecontainer">
+                <div id="actone">
+                    <h3>Conversation Questions</h3>
+                    <h4>Answer the questions below:</h4>
+                    
+                    <div>
+                        <p>What is your favorite color? Why?</p>
+                        <p>Who is your best friend?</p>
+                        <p>Where do you work?</p>
+                        <p>When do you like to listen to music?</p>
+                        <p>Why do you want to speak English?</p>
+                    </div>
+                </div>
+                <div id="actimg"></div>
+            </div>
+            
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Eleven</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="src/logowhite.png">
+    <script src="https://kit.fontawesome.com/da41431bf6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="headericons">
+            <a href="#" id="home" onclick="window.location.href = '../../A1A2.html'"><i class="fa-solid fa-house"></i> Home</a>
+            <a id="dictionary" href="#" onclick="window.open('https://dictionary.cambridge.org/', '_blank')"><i class="fa-solid fa-spell-check"></i> Dictionary</a>
+            <a href="#" id="logout" onclick="window.location.href = '/../index.html'"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+        </div>
+        <!--<audio id="audiocontrol" controls controlsList="nodownload noplaybackrate" style="display: none;">
+            <source src="HTG-CL2.mp3" type="audio/mp3">
+        </audio>-->
+    </header>
+    <aside>
+        <h3>Travel and transportation</h3>
+        <div id="container">
+            <a href="#" id="WarmUpLink" class="classitem" onclick="changeContent('WarmUp', this); callframe();"><i class="fa-solid fa-fire"></i></a>
+            <a href="#" id="VocabLink" class="classitem" onclick="changeContent('Vocabulary', this); killframe();"><i class="fa-solid fa-spell-check"></i></a>
+            <a href="#" id="InputOneLink" class="classitem" onclick="changeContent('InputOne', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="InputTwoLink" class="classitem" onclick="changeContent('InputTwo', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="PracticeLink" class="classitem" onclick="changeContent('Practice', this); callframe();"><i class="fa-solid fa-pen"></i></a>
+        </div>
+    </aside>
+    <main>
+        <div id="mainframe"></div>
+        <div id="classWarmUp" class="classContent" style="display: none;">
+            <div class="warmupitem">
+                <h3>O que você lembra da Lesson Fifteen?</h3>
+            </div>
+            <div class="warmupitem">
+                <h3>Você lembra dos Possessive Adjectives?</h3>
+            </div>
+        </div>
+        <div id="classVocabulary" class="classContent" style="display: none;">
+            <div id="vocabgrid" class="vocabtop">
+                <div id="vocab1">
+                </div>
+                <div id="vocab2" class="vocabtop">
+                </div>
+                <div class="vocab3">
+                    <div id="vocab3col1" class="vocab3col">
+                    </div>
+                    <div id="vocab3col2" class="vocab3col">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="classInputOne" class="classContent" style="display: none;">
+            <div id="inp1container">
+                <div class="inputoneitem" id="inputoneitem1"> 
+                    <h2><i class="fa-solid fa-circle-plus"></i> | Can & Could</h2>
+                    <!--to Lend-->
+                    <h4 style="text-align: center;">Can</h4>
+                    <p>I <strong style="color: #9e2a2b;">can </strong> play the guitar and the piano.</p>
+                    <p>I <strong style="color: #9e2a2b;">can not / can't </strong> sing.</p>
+                    <p><strong style="color: #9e2a2b;">Can </strong>you drive?</p>
+                    <!--to Borrow-->
+                    <h4 style="text-align: center;">Could</h4>
+                    <p>I <strong style="color: #9e2a2b;">could </strong> go with you.</p>
+                    <p>I <strong style="color: #9e2a2b;">could not / couldn't </strong> talk to him.</p>
+                    <p><strong style="color: #9e2a2b;">Could </strong>I have a glass of water?</p>
+                </div>
+                <div class="inputoneitem" id="inputoneitem2">
+                </div>
+            </div>
+        </div>
+        <div id="classInputTwo" class="classContent" style="display: none;">
+            <div id="inp1container">
+                <div class="inputoneitem" id="inputoneitem1"> 
+                    <h2><i class="fa-solid fa-circle-plus"></i> | Should & Ought to</h2>
+                    <!--to Lend-->
+                    <h4 style="text-align: center;">Should</h4>
+                    <p>I <strong style="color: #9e2a2b;">should </strong> spend less money on food.</p>
+                    <p>I <strong style="color: #9e2a2b;">should not / shouldn't </strong> go there alone.</p>
+                    <p><strong style="color: #9e2a2b;">Should </strong> I listen to her?</p>
+                    <!--to Borrow-->
+                    <h4 style="text-align: center;">Ought to</h4>
+                    <p>I <strong style="color: #9e2a2b;">ought to </strong> buy a new pair of shoes.</p>
+                    <p>You <strong style="color: #9e2a2b;">ought not to </strong> talk to him.</p>
+                    <p><strong style="color: #9e2a2b;">Ought he to </strong>see a doctor?</p>
+                </div>
+                <div class="inputoneitem" id="inputoneitem2">
+                </div>
+            </div>
+        </div>
+        <div id="classPractice" class="classContent" style="display: none;">
+            <div id="actonecontainer">
+                <div id="actone">
+                    <h3>Conversation Activity</h3>
+                    <h4>Answer the questions below:</h4>
+                    
+                    <div>
+                        <p>Are you good giving <strong>advice</strong>?</p>
+                        <p>What is the best advice you recieved in your life?</p>
+                        <p>Can you play instruments?</p>
+                        <p>Could you <strong>swim</strong> as a kid?</p>
+                    </div>
+                </div>
+                <div id="actimg"></div>
+            </div>
+            
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

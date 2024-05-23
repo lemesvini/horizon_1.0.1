@@ -1,0 +1,13 @@
+{
+    "vocab1EN": ["Vacation", "Luggage", "Trip", "Ticket", "Flight"],
+    "vocab1PT": ["Férias", "Bagagem", "Viagem", "Passagem, ingresso", "Voo"],
+
+    "vocab2EN": ["Car", "Motorcycle", "Cab / Taxi", "Airplane", "Traffic"],
+    "vocab2PT": ["Carro", "Motocicleta", "Taxi", "Avião", "Trânsito"],
+
+    "vocab3EN": ["Can", "Could", "Should", "Ought to"],
+    "vocab3PT": ["Poder", "Poderia", "Deveria", "Dever"],
+
+    "vocab4EN": ["to Travel / Traveled / Traveled", "to Arrive / Arrived / Arrived", "to Drive / Drove / Driven", "to Spend / Spent / Spent"],
+    "vocab4PT": ["Viajar", "Chegar", "Dirigir", "Gastar, Passar"]
+}

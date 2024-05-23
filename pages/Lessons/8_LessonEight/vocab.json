@@ -1,0 +1,13 @@
+{
+    "vocab1EN": ["Price", "Weight", "Height", "Quantity", "Lenght"],
+    "vocab1PT": ["Preço", "Peso", "Altura", "Quantidade", "Comprimento"],
+
+    "vocab2EN": ["Weekday(s)", "Weekend(s)", "Day Off", "Degree", "Clock"],
+    "vocab2PT": ["Dias da Semana", "Finais de semana", "Dia de folga", "Grau", "Relógio"],
+
+    "vocab3EN": ["Many", "Much", "How many...?", "How much...?"],
+    "vocab3PT": ["Muitos, Muitas", "Muito, Muita", "Quantos...?", "Quanto...?"],
+
+    "vocab4EN": ["to Count / Counted / Counted", "to Measure / Measured / Measured", "to Schedule / Scheduled / Scheduled", "to Celebrate / Celebrated / Celebrated"],
+    "vocab4PT": ["Contar", "Medir", "Agendar", "Celebrar"]
+}

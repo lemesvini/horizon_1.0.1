@@ -1,0 +1,13 @@
+{
+    "vocab1EN": ["Street", "Avenue", "Road", "Bus Stop", "Bridge"],
+    "vocab1PT": ["Rua", "Avenida", "Estrada, Avenida", "Ponto de ônibus", "Ponte"],
+
+    "vocab2EN": ["In", "On", "Under", "Behind", "Next To"],
+    "vocab2PT": ["Dentro", "Em cima / Sobre", "Embaixo", "Atrás", "Ao lado de"],
+
+    "vocab3EN": ["What", "When", "Where", "Who"],
+    "vocab3PT": ["O que", "Quando", "Onde", "Quem"],
+
+    "vocab4EN": ["Why / Because", "to Turn / Turned / Turned", "to Meet / Met / Met", "to Go out"],
+    "vocab4PT": ["Porquê", "Virar", "Encontrar", "Sair (passear)"]
+}

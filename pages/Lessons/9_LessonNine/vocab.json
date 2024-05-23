@@ -1,0 +1,13 @@
+{
+    "vocab1EN": ["More", "Less", "Easy", "Better", "Worse"],
+    "vocab1PT": ["Mais", "Menos", "Fácil", "Melhor", "Pior"],
+
+    "vocab2EN": ["Tall", "Short", "Young", "Old", "Tired"],
+    "vocab2PT": ["Alto", "Baixo", "Novo", "Velho", "Cansado"],
+
+    "vocab3EN": ["Blue", "Red", "Green", "Yellow"],
+    "vocab3PT": ["Azul", "Vermelho", "Verde", "Amarelo"],
+
+    "vocab4EN": ["to Feel / Felt / Felt", "to Compare / Compared / Compared", "to Understand / Understood / Understood", "to Criticize / Criticized / Criticized"],
+    "vocab4PT": ["Sentir", "Comparar", "Entender", "Criticar"]
+}
