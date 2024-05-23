@@ -1,0 +1,13 @@
+{
+    "vocab1EN": ["Future", "Early", "Late", "Date", "Schedule"],
+    "vocab1PT": ["Futuro", "Cedo", "Tarde", "Data, Econtro", "Agenda"],
+
+    "vocab2EN": ["Assignment", "(Weather) Forecast", "On/In Time", "Concert", "Release"],
+    "vocab2PT": ["Trabalho, Tarefa", "Previsão (do tempo)", "Na hora / A tempo", "Show (musical), concerto", "Lançamento"],
+
+    "vocab3EN": ["While", "For a while", "Plan", "Wish"],
+    "vocab3PT": ["Enquanto", "Por um tempo", "Plano", "Desejo"],
+
+    "vocab4EN": ["to Wait / Waited / Waited", "to Plan / Planned / Planned", "to Expect / Expected / Expected", "to Look Forward to"],
+    "vocab4PT": ["Esperar", "Planejar", "Esperar (que algo ocorra)", "Aguardar ansiosamente"]
+}

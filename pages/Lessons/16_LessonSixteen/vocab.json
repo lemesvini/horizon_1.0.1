@@ -1,0 +1,13 @@
+{
+    "vocab1EN": ["Charger", "Key", "Thing", "Notebook", "Stationary"],
+    "vocab1PT": ["Carregador", "Chave", "Coisa", "Caderno", "(Artigos/Materiais de) Papelaria"],
+
+    "vocab2EN": ["Sunscreen", "Make-up", "Deodorant", "Dental Floss", "Speaker"],
+    "vocab2PT": ["Protetor solar", "Maquiagem", "Desodorante", "Fio dental", "Caixa de som"],
+
+    "vocab3EN": ["Whose", "Near", "This / That", " These / Those"],
+    "vocab3PT": ["De quem", "Perto", "Isso / Aquilo", "Esses / Aqueles"],
+
+    "vocab4EN": ["to Lend / Lent / Lent", "to Borrow / Borrowed / Borrowed", "to Return / Returned / Returned", "to Take / Took / Took"],
+    "vocab4PT": ["Pedir, Perguntar", "Emprestar", "Pegar Emprestado", "Pegar, Tomar"]
+}

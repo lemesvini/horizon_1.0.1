@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Seventeen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="src/logowhite.png">
+    <script src="https://kit.fontawesome.com/da41431bf6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="headericons">
+            <a href="#" id="home" onclick="window.location.href = '../../A1A2.html'"><i class="fa-solid fa-house"></i> Home</a>
+            <a id="dictionary" href="#" onclick="window.open('https://dictionary.cambridge.org/', '_blank')"><i class="fa-solid fa-spell-check"></i> Dictionary</a>
+            <a href="#" id="logout" onclick="window.location.href = '/../index.html'"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+        </div>
+        <!--<audio id="audiocontrol" controls controlsList="nodownload noplaybackrate" style="display: none;">
+            <source src="HTG-CL2.mp3" type="audio/mp3">
+        </audio>-->
+    </header>
+    <aside>
+        <h3>Fortune Teller</h3>
+        <div id="container">
+            <a href="#" id="WarmUpLink" class="classitem" onclick="changeContent('WarmUp', this); callframe();"><i class="fa-solid fa-fire"></i></a>
+            <a href="#" id="VocabLink" class="classitem" onclick="changeContent('Vocabulary', this); killframe();"><i class="fa-solid fa-spell-check"></i></a>
+            <a href="#" id="InputOneLink" class="classitem" onclick="changeContent('InputOne', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="InputTwoLink" class="classitem" onclick="changeContent('InputTwo', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="PracticeLink" class="classitem" onclick="changeContent('Practice', this); callframe();"><i class="fa-solid fa-pen"></i></a>
+        </div>
+    </aside>
+    <main>
+        <div id="mainframe"></div>
+        <div id="classWarmUp" class="classContent" style="display: none;">
+            <div class="warmupitem">
+                <h3>O que você lembra da Lesson Sixteen?</h3>
+            </div>
+            <div class="warmupitem">
+                <h3>Você está preparado(a) para o futuro?</h3>
+            </div>
+        </div>
+        <div id="classVocabulary" class="classContent" style="display: none;">
+            <div id="vocabgrid" class="vocabtop">
+                <div id="vocab1">
+                </div>
+                <div id="vocab2" class="vocabtop">
+                </div>
+                <div class="vocab3">
+                    <div id="vocab3col1" class="vocab3col">
+                    </div>
+                    <div id="vocab3col2" class="vocab3col">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="classInputOne" class="classContent" style="display: none;">
+            <div id="inp1container">
+                <div class="inputoneitem" id="inputoneitem1"> 
+                    <h2 style="margin: 20px;"><i class="fa-solid fa-circle-plus"></i> | Will</h2>
+                    <!--to Lend-->
+                    <h4 style="text-align: center;">"Will" is a modal verb to indicate future!</h4>
+                    <p style="color: grey; margin-bottom: 32px;">Unplanned or spontaneous actions: </p>
+                    <p>I <strong style="color: #9e2a2b;">will</strong> take a shower before work.</p>
+                    <p>She <strong style="color: #9e2a2b;">will</strong> be here on time.</p>
+                    <p>I <strong style="color: #9e2a2b;">will not</strong> go to work today.</p>
+                    <p>He <strong style="color: #9e2a2b;">won't</strong> come to the party.</p>
+                    <p><strong style="color: #9e2a2b;">Will</strong> you talk to him?</p>
+
+                </div>
+                <div class="inputoneitem" id="inputoneitem2">
+                </div>
+            </div>
+        </div>
+        <div id="classInputTwo" class="classContent" style="display: none;">
+            <div id="inp1container">
+                <div class="inputoneitem" id="inputoneitem1"> 
+                    <h2 style="margin: 30px;"><i class="fa-solid fa-circle-plus"></i> | To be Going To</h2>
+                    <!--to Lend-->
+                    <h4 style="text-align: center;">Going to&nbsp; <i class="fa-solid fa-circle-arrow-right"></i>&nbsp; <strong> Gonna</strong></h4>
+                    <p>I <strong style="color: #9e2a2b;">am going to</strong> buy a new house.</p>
+                    <p>You<strong style="color: #9e2a2b;">'re going to</strong> buy a new car.</p>
+                    <p>He <strong style="color: #9e2a2b;">isn't going to</strong> travel to Europe.</p>
+                    <p>She <strong style="color: #9e2a2b;">'s gonna</strong> go to college.</p>
+                    <p><strong style="color: #9e2a2b;">Are you going to</strong> move to another city?</p>
+                    <p><strong style="color: #9e2a2b;">Are you gonna</strong> call her?</p>
+
+                </div>
+                <div class="inputoneitem" id="inputoneitem2">
+                </div>
+            </div>
+
+        </div>
+        <div id="classPractice" class="classContent" style="display: none;">
+            <div id="actonecontainer">
+                <div id="actone">
+                    <h3>Conversation Activity</h3>
+                    <h4>Let's talk about the future!</h4>
+                    <div>
+                        <p>What are your plans for this year?</p>
+                        <p>What are you gonna do for <strong>New Year's Eve?</strong></p>
+                        <p>Do you have plans to live in another country?</p>
+                    </div>
+                </div>
+                <div id="actimg"></div>
+            </div>
+            
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

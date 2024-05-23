@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson Sixteen</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="src/logowhite.png">
+    <script src="https://kit.fontawesome.com/da41431bf6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="headericons">
+            <a href="#" id="home" onclick="window.location.href = '../../A1A2.html'"><i class="fa-solid fa-house"></i> Home</a>
+            <a id="dictionary" href="#" onclick="window.open('https://dictionary.cambridge.org/', '_blank')"><i class="fa-solid fa-spell-check"></i> Dictionary</a>
+            <a href="#" id="logout" onclick="window.location.href = '/../index.html'"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a>
+        </div>
+        <!--<audio id="audiocontrol" controls controlsList="nodownload noplaybackrate" style="display: none;">
+            <source src="HTG-CL2.mp3" type="audio/mp3">
+        </audio>-->
+    </header>
+    <aside>
+        <h3>Whose is that?</h3>
+        <div id="container">
+            <a href="#" id="WarmUpLink" class="classitem" onclick="changeContent('WarmUp', this); callframe();"><i class="fa-solid fa-fire"></i></a>
+            <a href="#" id="VocabLink" class="classitem" onclick="changeContent('Vocabulary', this); killframe();"><i class="fa-solid fa-spell-check"></i></a>
+            <a href="#" id="InputOneLink" class="classitem" onclick="changeContent('InputOne', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="InputTwoLink" class="classitem" onclick="changeContent('InputTwo', this); callframe();"><i class="fa-solid fa-circle-plus"></i></a>
+            <a href="#" id="PracticeLink" class="classitem" onclick="changeContent('Practice', this); callframe();"><i class="fa-solid fa-pen"></i></a>
+        </div>
+    </aside>
+    <main>
+        <div id="mainframe"></div>
+        <div id="classWarmUp" class="classContent" style="display: none;">
+            <div class="warmupitem">
+                <h3>O que você lembra da Lesson Fifteen?</h3>
+            </div>
+            <div class="warmupitem">
+                <h3>Você lembra dos Possessive Adjectives?</h3>
+            </div>
+        </div>
+        <div id="classVocabulary" class="classContent" style="display: none;">
+            <div id="vocabgrid" class="vocabtop">
+                <div id="vocab1">
+                </div>
+                <div id="vocab2" class="vocabtop">
+                </div>
+                <div class="vocab3">
+                    <div id="vocab3col1" class="vocab3col">
+                    </div>
+                    <div id="vocab3col2" class="vocab3col">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="classInputOne" class="classContent" style="display: none;">
+            <div id="inp1container">
+                <div class="inputoneitem" id="inputoneitem1"> 
+                    <h2><i class="fa-solid fa-circle-plus"></i> | to Lend X to Borrow</h2>
+                    <!--to Lend-->
+                    <h4 style="text-align: center;">Quando emprestamos algo:</h4>
+                    <p>I <strong style="color: #9e2a2b;">lent you</strong> a pen. Return it, please.</p>
+                    <p>I <strong style="color: #9e2a2b;">lent her</strong> my car yesterday.</p>
+                    <br>
+                    <!--to Borrow-->
+                    <h4 style="text-align: center;">Quando pedimos algo emprestado:</h4>
+                    <p>Can I <strong style="color: #9e2a2b;">borrow</strong> your phone for a minute?</p>
+                    <p>I <strong style="color: #9e2a2b;">borrowed</strong> her make-up.</p>
+                </div>
+                <div class="inputoneitem" id="inputoneitem2">
+                </div>
+            </div>
+        </div>
+        <div id="classInputTwo" class="classContent" style="display: none;">
+            <h2><i class="fa-solid fa-circle-plus"></i> | Possessive Pronouns</h2>
+            <div id="tobe">
+                <div id="one" style="text-align: left; display: flex; flex-direction: row; border: 2px solid #9e2a2b; border-radius: 16px;">
+                    <div id="pronouns" style="text-align: center;">
+                        <p style="color: grey;">Subjects</p>
+                        <p><strong>I</strong></p>
+                        <p><strong>You</strong></p>
+                        <p><strong>He</strong></p>
+                        <p><strong>She</strong></p>
+                        <p><strong>It</strong></p>
+                        <p><strong>We</strong></p>
+                        <p><strong>They</strong></p>
+                    </div>
+                    <div id="possessiveadj" style="text-align: center;">
+                        <p style="color: grey;">Adjectives</p>
+                        <p>My</p>
+                        <p>Your</p>
+                        <p>His</p>
+                        <p>Her</p>
+                        <p>Its</p>
+                        <p>Our</p>
+                        <p>Their</p>
+                    </div>
+                    <div id="possessivepronouns" style="text-align: center;">
+                        <p style="color: grey;">Pronouns</p>
+                        <p><strong style="color: #9e2a2b;">Mine</strong></p>
+                        <p><strong style="color: #9e2a2b;">Yours</strong></p>
+                        <p><strong style="color: #9e2a2b;">His</strong></p>
+                        <p><strong style="color: #9e2a2b;">Hers</strong></p>
+                        <p><strong style="color: #9e2a2b;">Its</strong></p>
+                        <p><strong style="color: #9e2a2b;">Ours</strong></p>
+                        <p><strong style="color: #9e2a2b;">Theirs</strong></p>
+                    </div>
+                </div>
+                <div id="two">
+                    <p>My car is blue and <strong style="color: #9e2a2b;">yours</strong> is red.</p>
+                    <p>I lent you my pen and she borrowed <strong style="color: #9e2a2b;">his</strong>.</p>
+                    <br>
+                    <p>A: Whose cellphone is this?<strong style="color: #9e2a2b;"></strong></p>
+                    <p>B: It's <strong style="color: #9e2a2b;">hers</strong>.</p>
+                    <br>
+                    <p>A: Whose notebook is that?<strong style="color: #9e2a2b;"></strong></p>
+                    <p>B: It's <strong style="color: #9e2a2b;">theirs</strong>!</p>
+                </div>
+            </div>
+        </div>
+        <div id="classPractice" class="classContent" style="display: none;">
+            <div id="actonecontainer">
+                <div id="actone">
+                    <h3>Fixation Activities</h3>
+                    <h4>Complete the sentences below:</h4>
+                    
+                    <div>
+                        <p>A) _____(her / hers) car is red, but _____(my / mine) is blue.</p>
+                        <p>B) I thought this phone was _____(your / yours).</p>
+                        <p>C) This is _____(my / mine) favorite. What's _____(your / yours)?</p>
+                        <p>D) It's not _____(my / mine) problem!</p>
+                    </div>
+                </div>
+                <div id="actimg"></div>
+            </div>
+            
+
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
