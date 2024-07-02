@@ -422,40 +422,18 @@ main.full-width{
         z-index: 100; 
         display: flex;
         align-items: center;
+        justify-content: center;
         background-color: #0a3153;
         border-bottom: 1px solid lightgrey;
         height: 9vh;
         width: 100%;
     }
-    .header-icons{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        
-    }
     .header-icons a {
-        text-decoration: none;
-        color: #c3c3c3;
-        font-size: 30px;
-        width: 30px;
-        height: 40px;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin-left: 16px;
-    }
-    .header-icons a:hover{
-        color: white;
-    }
-    .header-icons img{
-        width: 100%;
-        height: 2rem;
-        display: flex;
-        justify-self: center;
+        display: none;
+
     }
     .layout {
-        margin-top: 9dvh;
+        margin-top: 20dvh;
         display: flex;
         flex-direction: row;
     }
@@ -465,8 +443,8 @@ main.full-width{
         top: 9vh;
         left: 0;
         background-color: white;
-        height: 92vh; 
-        width: 250px;
+        width: 100%;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -474,12 +452,15 @@ main.full-width{
         z-index: 1000;
     }
     nav.hidden{
-        width: 0;
+        height: 0;
+    }
+    #appendix{
+        display: none;
     }
     main {
         /*grid-area: main;*/
         width: 100%;
-        margin-left: 250px;
+        margin-left: 0;
         padding: 20px;
         background-color: #eaeaea;
         overflow-y: auto; 
@@ -489,7 +470,7 @@ main.full-width{
         margin-left: 0;
     }
     .studentprofile{
-        display: flex;
+        display: none;
         flex-direction: row;
         justify-content: left;
         align-items: center;
@@ -497,7 +478,7 @@ main.full-width{
         width: 90%;
     }
     #userlogo{
-        display: flex;
+        display: none;
         width: 15%;
         font-size: xx-large;
         align-items: center;
@@ -505,7 +486,7 @@ main.full-width{
         color: #0a3153;
     }
     #studentid{
-        display: flex;
+        display: none;
         flex-direction: column;
         justify-content: center;
         height: 60%;
@@ -517,7 +498,7 @@ main.full-width{
         font-size: larger;
     }
     .modulename{
-        display: flex;
+        display: none;
         height: 30px;
         width: 80%;
         padding: 6px;
@@ -533,6 +514,7 @@ main.full-width{
         border-radius: 16px;
     }
     #bottomline{
+        display: none;
         margin-top: 3dvh;
         background-color: #c3c3c3;
         width: 80%;
@@ -541,21 +523,21 @@ main.full-width{
     }
     .studentmenu{
         display: flex;
-        flex-direction: column;
-        width: 100%;
+        flex-direction: row;
         align-items: center;
+        justify-content: space-evenly;
         gap: 2dvh;
-        padding: 2dvh;
+        padding: 2%;
     }
     .menuitem{
-        padding: 6%;
         border-radius: 8px;
-        width: 75%;
         color: #c3c3c3;
         text-decoration: none;
         font-weight: 600;
-        font-size: 18px;
-        text-align: left;
+        font-size: 14px;
+        text-align: center;
+        width: 60px;
+        height: 30px;
     }
     .menuitem:hover{
         background-color: #EAEAEA;
@@ -680,6 +662,42 @@ main.full-width{
     .titleunit{
         color: #0a3153;
         margin-bottom: 0;
+    }
+    .actlesson1{
+        background-color: rgb(252, 252, 252);
+        border-radius: 16px;
+        box-shadow:  5px 5px 9px #d0d0d0;
+        padding: 1%;
+        margin-bottom: 16px;
+        background: linear-gradient(90deg, rgba(51,92,103,1) 2%, rgba(255,255,255,1) 2%);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .actlesson1 h3{
+        color: #0a3153;
+        margin-left: 32px;
+    }
+    .actlesson1 p{
+        color: grey;
+        margin-left: 32px;
+    }
+    .actOpt{
+        align-items: center;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .actDownload{
+        width: 80px;
+        border: none;
+        border-radius: 12px;
+        font-size: x-large;   
+        color: #0a3153;
+    }
+    #obsAct{
+        display: none;
     }
 }
 
