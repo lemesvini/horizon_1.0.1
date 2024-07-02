@@ -4,6 +4,25 @@ html, body {
     margin: 0;
     
 }
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #555;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
 header {
     position: fixed;
     top: 0;
@@ -286,7 +305,109 @@ main.full-width{
     color: #0a3153;
     margin-bottom: 0;
 }
+.actlesson1{
+    background-color: rgb(252, 252, 252);
+    border-radius: 16px;
+    box-shadow:  5px 5px 9px #d0d0d0;
+    padding: 1%;
+    margin-bottom: 16px;
+    background: linear-gradient(90deg, rgba(51,92,103,1) 2%, rgba(255,255,255,1) 2%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.actlesson1 h3{
+    color: #0a3153;
+    margin-left: 32px;
+}
+.actlesson1 p{
+    color: grey;
+    margin-left: 32px;
+}
+.actOpt{
+    align-items: center;
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.actDownload{
+    margin: 8px;
+    height: 70%;
+    width: 80%;
+    border: none;
+    border-radius: 12px;
+    font-size: x-large;   
+    color: #0a3153;
+}
+.actDownload:hover{
+    cursor: pointer;
+    background-color: white;
+    border: 2px solid #9e2a2b;
+    color: #9e2a2b;
+}
+#obsAct{
+    background-color: rgb(107, 223, 107);
+    color: white;
+    height: 8dvh;
+    display: flex;
+    padding-left: 2%;
+    align-items: center;
+    border-radius: 12px;
+}
+.apItem{
+    background-color: white;
+    border-radius: 8px;
+    padding: 2%;
+    margin: 2%;
+}
+.appendixEnglishVocab{
+    display: flex;
+    color: #0a3153;
 
+    font-weight: 600;
+    align-items: center;
+}
+.appendixPortugueseVocab{
+    display: flex;
+    color: grey;
+    font-size: small;
+    align-items: center;
+}
+#tobeappendix{
+    background-color: white;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 8px;
+}
+.appTitle{
+    color: #9e2a2b;
+    font-size: larger;
+    text-align: center;
+}
+
+#apToBe{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+.toBeDiv{
+    width: 100%;
+}
+.toBeVocab{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+    width: 90%;
+}
+.vocabulary-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid lightgrey;
+}
 @media only screen and (max-width: 500px){
     html, body {
         background-color: white;
