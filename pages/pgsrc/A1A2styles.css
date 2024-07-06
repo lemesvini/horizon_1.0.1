@@ -324,6 +324,44 @@ main.full-width{
     color: grey;
     margin-left: 32px;
 }
+.actlesson2{
+    background-color: rgb(252, 252, 252);
+    border-radius: 16px;
+    box-shadow:  5px 5px 9px #d0d0d0;
+    padding: 1%;
+    margin-bottom: 16px;
+    background: linear-gradient(90deg, rgb(153, 194, 134) 2%, rgba(255,255,255,1) 2%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.actlesson2 h3{
+    color: #0a3153;
+    margin-left: 32px;
+}
+.actlesson2 p{
+    color: grey;
+    margin-left: 32px;
+}
+.actlesson3{
+    background-color: rgb(252, 252, 252);
+    border-radius: 16px;
+    box-shadow:  5px 5px 9px #d0d0d0;
+    padding: 1%;
+    margin-bottom: 16px;
+    background: linear-gradient(90deg, #e26d5c 2%, rgba(255,255,255,1) 2%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.actlesson3 h3{
+    color: #0a3153;
+    margin-left: 32px;
+}
+.actlesson3 p{
+    color: grey;
+    margin-left: 32px;
+}
 .actOpt{
     align-items: center;
     width: 10%;
@@ -419,7 +457,7 @@ main.full-width{
         position: fixed;
         top: 0;
         left: 0;
-        z-index: 100;
+        z-index: 100; 
         background-color: #0a3153;
         border-bottom: 1px solid lightgrey;
         height: 9vh;
